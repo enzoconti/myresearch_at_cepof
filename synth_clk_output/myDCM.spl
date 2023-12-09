@@ -1,0 +1,13 @@
+[Inputs]
+RST_IN
+CLKIN_IN
+
+[Outputs]
+=STATUS_OUT[7:0]=
+LOCKED_OUT
+CLKFX_OUT
+CLKIN_IBUFG_OUT
+
+[BiDir]
+[Type]
+BLOCK

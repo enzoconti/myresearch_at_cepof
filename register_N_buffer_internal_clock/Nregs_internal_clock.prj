@@ -1,0 +1,3 @@
+verilog work "register.v"
+verilog work "Nreg_internal_clock.v"
+verilog work "Nregs_internal_clock.v"

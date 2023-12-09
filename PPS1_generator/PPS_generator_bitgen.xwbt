@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/PPS1_generator/PPS_generator.ncd
+OUTFILE=/home/ise/PPS1_generator/PPS_generator.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/ise/PPS1_generator
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

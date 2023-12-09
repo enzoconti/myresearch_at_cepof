@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="46">
+<DesignStatistics TimeStamp="Tue Sep 12 22:48:01 2023"><group name="NetStatistics">
+<item name="NumNets_Active" rev="46">
+<attrib name="value" value="23"/></item>
+<item name="NumNets_Gnd" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="NumNets_Vcc" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_CLKPIN" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="NumNodesOfType_Active_DOUBLE" rev="46">
+<attrib name="value" value="29"/></item>
+<item name="NumNodesOfType_Active_DUMMY" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_DUMMYESC" rev="46">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_GLOBAL" rev="46">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Active_HFULLHEX" rev="46">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_HLONG" rev="46">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_HUNIHEX" rev="46">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Active_INPUT" rev="46">
+<attrib name="value" value="11"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="46">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_OMUX" rev="46">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="46">
+<attrib name="value" value="9"/></item>
+<item name="NumNodesOfType_Active_PREBXBY" rev="46">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Active_VFULLHEX" rev="46">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_VLONG" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_VUNIHEX" rev="46">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Gnd_DUMMY" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_INPUT" rev="46">
+<attrib name="value" value="9"/></item>
+<item name="NumNodesOfType_Gnd_OMUX" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="NumNodesOfType_Gnd_OUTPUT" rev="46">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Vcc_CNTRLPIN" rev="46">
+<attrib name="value" value="9"/></item>
+<item name="NumNodesOfType_Vcc_DUMMY" rev="46">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Vcc_INPUT" rev="46">
+<attrib name="value" value="3"/></item>
+<item name="NumNodesOfType_Vcc_VCCOUT" rev="46">
+<attrib name="value" value="5"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="IBUF-DIFFMI" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="IBUF-DIFFS" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="IOB-DIFFM" rev="46">
+<attrib name="value" value="2"/></item>
+<item name="IOB-DIFFS" rev="46">
+<attrib name="value" value="4"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="45">
+<attrib name="value" value="12"/></item>
+<item name="AGG_IO" rev="45">
+<attrib name="value" value="12"/></item>
+<item name="AGG_SLICE" rev="45">
+<attrib name="value" value="8"/></item>
+<item name="NUM_4_INPUT_LUT" rev="45">
+<attrib name="value" value="16"/></item>
+<item name="NUM_BONDED_IBUF" rev="45">
+<attrib name="value" value="2"/></item>
+<item name="NUM_BONDED_IOB" rev="45">
+<attrib name="value" value="10"/></item>
+<item name="NUM_BUFGMUX" rev="45">
+<attrib name="value" value="1"/></item>
+<item name="NUM_SHIFT" rev="45">
+<attrib name="value" value="16"/></item>
+<item name="NUM_SLICEM" rev="45">
+<attrib name="value" value="8"/></item>
+<item name="NUM_SLICE_FF" rev="45">
+<attrib name="value" value="1"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Tue Sep 12 22:48:01 2023"><group name="SiteSummary">
+<item name="BUFGMUX" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFGMUX_GCLKMUX" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFGMUX_GCLK_BUFFER" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IBUF" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
+<item name="IBUF_INBUF" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
+<item name="IBUF_PAD" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
+<item name="IOB" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="10"/></item>
+<item name="IOB_OUTBUF" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="10"/></item>
+<item name="IOB_PAD" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="10"/></item>
+<item name="SLICEM" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
+<item name="SLICEM_F" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
+<item name="SLICEM_FFX" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="SLICEM_FMC15_BLACKBOX" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="7"/></item>
+<item name="SLICEM_G" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
+<item name="SLICEM_GMC15_BLACKBOX" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
+<item name="SLICEM_WSGEN" rev="46">
+<attrib name="total" value="1000000"/><attrib name="used" value="8"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Tue Sep 12 22:48:01 2023"><group name="IBUF_PAD">
+<item name="IOATTRBOX" rev="46">
+<attrib name="LVCMOS25" value="2"/></item>
+</group>
+<group name="IBUF_INBUF">
+<item name="IFD_DELAY_VALUE" rev="22">
+<attrib name="DLY3" value="1"/></item>
+</group>
+<group name="SLICEM_F">
+<item name="DI" rev="46">
+<attrib name="DI" value="8"/><attrib name="DI_INV" value="0"/></item>
+<item name="F_ATTR" rev="46">
+<attrib name="SHIFT_REG" value="8"/></item>
+<item name="LUT_OR_MEM" rev="46">
+<attrib name="RAM" value="8"/></item>
+</group>
+<group name="SLICEM_G">
+<item name="DI" rev="46">
+<attrib name="DI" value="8"/><attrib name="DI_INV" value="0"/></item>
+<item name="G_ATTR" rev="46">
+<attrib name="SHIFT_REG" value="8"/></item>
+<item name="LUT_OR_MEM" rev="46">
+<attrib name="RAM" value="8"/></item>
+</group>
+<group name="SLICEM">
+<item name="BY" rev="46">
+<attrib name="BY" value="4"/><attrib name="BY_INV" value="0"/></item>
+<item name="CLK" rev="46">
+<attrib name="CLK" value="8"/><attrib name="CLK_INV" value="0"/></item>
+<item name="SHIFTIN" rev="46">
+<attrib name="SHIFTIN_INV" value="0"/><attrib name="SHIFTIN" value="4"/></item>
+<item name="SR" rev="46">
+<attrib name="SR" value="8"/><attrib name="SR_INV" value="0"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="46">
+<attrib name="IN_INV" value="0"/><attrib name="IN" value="10"/></item>
+</group>
+<group name="IBUF">
+<item name="ICLK1" rev="22">
+<attrib name="ICLK1_INV" value="0"/><attrib name="ICLK1" value="1"/></item>
+</group>
+<group name="BUFGMUX_GCLKMUX">
+<item name="DISABLE_ATTR" rev="46">
+<attrib name="LOW" value="1"/></item>
+<item name="S" rev="46">
+<attrib name="S_INV" value="1"/><attrib name="S" value="0"/></item>
+</group>
+<group name="IBUF_IFF1">
+<item name="CK" rev="22">
+<attrib name="CK" value="1"/><attrib name="CK_INV" value="0"/></item>
+<item name="IFF1_INIT_ATTR" rev="22">
+<attrib name="INIT0" value="1"/></item>
+<item name="LATCH_OR_FF" rev="22">
+<attrib name="FF" value="1"/></item>
+</group>
+<group name="SLICEM_WSGEN">
+<item name="CK" rev="46">
+<attrib name="CK" value="8"/><attrib name="CK_INV" value="0"/></item>
+<item name="SYNC_ATTR" rev="46">
+<attrib name="ASYNC" value="1"/></item>
+<item name="WE" rev="46">
+<attrib name="WE_INV" value="0"/><attrib name="WE" value="8"/></item>
+</group>
+<group name="SLICEM_FFX">
+<item name="CK" rev="46">
+<attrib name="CK" value="1"/><attrib name="CK_INV" value="0"/></item>
+<item name="D" rev="46">
+<attrib name="D" value="1"/><attrib name="D_INV" value="0"/></item>
+<item name="FFX_INIT_ATTR" rev="46">
+<attrib name="INIT0" value="1"/></item>
+<item name="FFX_SR_ATTR" rev="46">
+<attrib name="SRLOW" value="1"/></item>
+<item name="LATCH_OR_FF" rev="46">
+<attrib name="FF" value="1"/></item>
+<item name="SYNC_ATTR" rev="46">
+<attrib name="ASYNC" value="1"/></item>
+</group>
+<group name="SLICEM_FFY">
+<item name="CK" rev="32">
+<attrib name="CK" value="1"/><attrib name="CK_INV" value="0"/></item>
+<item name="D" rev="32">
+<attrib name="D" value="1"/><attrib name="D_INV" value="0"/></item>
+<item name="FFY_INIT_ATTR" rev="32">
+<attrib name="INIT0" value="1"/></item>
+<item name="FFY_SR_ATTR" rev="32">
+<attrib name="SRLOW" value="1"/></item>
+<item name="LATCH_OR_FF" rev="32">
+<attrib name="FF" value="1"/></item>
+<item name="SYNC_ATTR" rev="32">
+<attrib name="ASYNC" value="1"/></item>
+</group>
+<group name="IOB_PAD">
+<item name="DRIVEATTRBOX" rev="46">
+<attrib name="12" value="10"/></item>
+<item name="IOATTRBOX" rev="46">
+<attrib name="LVCMOS25" value="10"/></item>
+<item name="SLEW" rev="46">
+<attrib name="SLOW" value="10"/></item>
+</group>
+<group name="IOB">
+<item name="O1" rev="46">
+<attrib name="O1_INV" value="0"/><attrib name="O1" value="10"/></item>
+</group>
+<group name="BUFGMUX">
+<item name="S" rev="46">
+<attrib name="S_INV" value="1"/><attrib name="S" value="0"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Tue Sep 12 22:48:01 2023"><group name="SLICEM_FMC15_BLACKBOX">
+<item name="MC15" rev="46">
+<attrib name="value" value="7"/></item>
+<item name="WS2" rev="46">
+<attrib name="value" value="7"/></item>
+</group>
+<group name="IBUF_PAD">
+<item name="PAD" rev="46">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="IBUF_INBUF">
+<item name="IN" rev="46">
+<attrib name="value" value="2"/></item>
+<item name="OUT" rev="46">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="SLICEM_F">
+<item name="A1" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="A2" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="A3" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="A4" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="D" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="DI" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="WS" rev="46">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="SLICEM_G">
+<item name="DI" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="WS" rev="46">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="BUFGMUX_GCLK_BUFFER">
+<item name="IN" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="46">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="SLICEM">
+<item name="BY" rev="46">
+<attrib name="value" value="4"/></item>
+<item name="CLK" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="F1" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="F2" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="F3" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="F4" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="SHIFTIN" rev="46">
+<attrib name="value" value="4"/></item>
+<item name="SHIFTOUT" rev="46">
+<attrib name="value" value="4"/></item>
+<item name="SR" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="XB" rev="46">
+<attrib name="value" value="3"/></item>
+<item name="XQ" rev="46">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="46">
+<attrib name="value" value="10"/></item>
+<item name="OUT" rev="46">
+<attrib name="value" value="10"/></item>
+</group>
+<group name="IBUF">
+<item name="I" rev="46">
+<attrib name="value" value="2"/></item>
+<item name="PAD" rev="46">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="BUFGMUX_GCLKMUX">
+<item name="I0" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="S" rev="46">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IBUF_IFF1">
+<item name="CK" rev="22">
+<attrib name="value" value="1"/></item>
+<item name="D" rev="22">
+<attrib name="value" value="1"/></item>
+<item name="Q" rev="22">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="SLICEM_GMC15_BLACKBOX">
+<item name="MC15" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="WS2" rev="46">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="SLICEM_WSGEN">
+<item name="CK" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="WE" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="WSF" rev="46">
+<attrib name="value" value="8"/></item>
+<item name="WSG" rev="46">
+<attrib name="value" value="8"/></item>
+</group>
+<group name="SLICEM_FFX">
+<item name="CK" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="D" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="Q" rev="46">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="SLICEM_FFY">
+<item name="CK" rev="32">
+<attrib name="value" value="1"/></item>
+<item name="D" rev="32">
+<attrib name="value" value="1"/></item>
+<item name="Q" rev="32">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_PAD">
+<item name="PAD" rev="46">
+<attrib name="value" value="10"/></item>
+</group>
+<group name="IOB">
+<item name="O1" rev="46">
+<attrib name="value" value="10"/></item>
+<item name="PAD" rev="46">
+<attrib name="value" value="10"/></item>
+</group>
+<group name="BUFGMUX">
+<item name="I0" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="46">
+<attrib name="value" value="1"/></item>
+<item name="S" rev="46">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IBUF_IFD_DELAY">
+<item name="IN" rev="22">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="22">
+<attrib name="value" value="1"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

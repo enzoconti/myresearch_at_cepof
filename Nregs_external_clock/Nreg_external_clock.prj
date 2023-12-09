@@ -1,0 +1,2 @@
+verilog work "register.v"
+verilog work "Nregs_external_clock.v"

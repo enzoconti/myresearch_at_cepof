@@ -1,0 +1,2 @@
+xaw2spl {-intstyle ise} /home/ise/synth_clk_output/ipcore_dir/myDCM.xaw 
+spl2sym -intstyle ise -family spartan3e myDCM.spl /home/ise/synth_clk_output/myDCM.sym 

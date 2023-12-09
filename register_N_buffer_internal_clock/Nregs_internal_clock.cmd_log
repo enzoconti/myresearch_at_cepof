@@ -1,0 +1,375 @@
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f Nregs_internal_clock.ut Nregs_internal_clock.ncd 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 Nregs_internal_clock.ngc Nregs_internal_clock.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Nregs_internal_clock_map.ncd Nregs_internal_clock.ngd Nregs_internal_clock.pcf 
+par -w -intstyle ise -ol high -t 1 Nregs_internal_clock_map.ncd Nregs_internal_clock.ncd Nregs_internal_clock.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Nregs_internal_clock.twx Nregs_internal_clock.ncd -o Nregs_internal_clock.twr Nregs_internal_clock.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.xst" -ofn "/home/ise/register_N_buffer_internal_clock/Nregs_internal_clock.syr" 

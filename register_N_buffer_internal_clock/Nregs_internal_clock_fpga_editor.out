@@ -1,0 +1,73 @@
+#:C26    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   SPARC M2.1 P.20131013
+#Current Working Directory:
+#:D   /home/ise/register_N_buffer_internal_clock
+#Host Name:
+#:H   localhost.localdomain
+#Date/Time:
+#:T   Fri Dec  1 21:38:16 2023
+#------------------------------
+	#Reading Nregs_internal_clock.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+	#   "Nregs_internal_clock" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+	#Design creation date: 2023.12.01.21.37.31
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+post attr
+	#Getting available speed grades of the device...
+	#3
+unpost main
+	#4
+unselect -all
+	#5
+save
+	#6
+save
+	#7
+refresh
+	#8
+unselect -all
+	#9
+unselect -all
+	#10
+unselect -all
+	#11
+setattr main disable_draw on
+	#12
+setattr layer ratsnests view on
+	#13
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#14
+setattr main disable_draw on
+	#15
+setattr layer routes view on
+	#16
+setattr main disable_draw off
+	#17
+setattr main disable_draw on
+	#18
+setattr layer components view on
+	#19
+setattr main disable_draw off
+	#20
+setattr main disable_draw on
+	#21
+setattr layer switch_boxes view on
+	#22
+setattr main disable_draw off
+	#23
+setattr main disable_draw on
+	#24
+setattr layer sites view on
+	#25
+setattr main disable_draw off
+	#26
+setattr main disable_draw on
+	#27
+setattr layer text view on

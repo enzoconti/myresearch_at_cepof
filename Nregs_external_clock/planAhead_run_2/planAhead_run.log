@@ -1,0 +1,73 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -2326 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/ise/Nregs_external_clock/pa.fromNcd.tcl
+# create_project -name Nregs_external_clock -dir "/home/ise/Nregs_external_clock/planAhead_run_2" -part xc3s500efg320-4
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "/home/ise/Nregs_external_clock/Nreg_internal_clock.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/ise/Nregs_external_clock} }
+# set_property target_constrs_file "ports.ucf" [current_fileset -constrset]
+Adding file '/home/ise/Nregs_external_clock/ports.ucf' to fileset 'constrs_1'
+# add_files [list {ports.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s500efg320-4
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Nreg_internal_clock.ngc ...
+WARNING:NetListWriters:298 - No output is written to Nreg_internal_clock.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Nreg_internal_clock.edif ...
+ngc2edif: Total memory usage is 103904 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/Nregs_external_clock.data/cache/Nreg_internal_clock_ngc_4dd49e04.edif]
+Finished Parsing EDIF File [./planAhead_run_2/Nregs_external_clock.data/cache/Nreg_internal_clock_ngc_4dd49e04.edif]
+INFO: [Designutils 20-910] Reading macro library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [/home/ise/Nregs_external_clock/ports.ucf]
+Finished Parsing UCF File [/home/ise/Nregs_external_clock/ports.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 11f64954
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2730.801 ; gain = 79.457
+# read_xdl -file "/home/ise/Nregs_external_clock/Nreg_internal_clock.xdl"
+INFO: [Designutils 20-669] Parsing Placement File : /home/ise/Nregs_external_clock/Nreg_internal_clock.xdl
+INFO: [Designutils 20-658] Finished Parsing Placement File : /home/ise/Nregs_external_clock/Nreg_internal_clock.xdl
+INFO: [Designutils 20-671] Placed 14 instances
+# if {[catch {read_twx -name results_1 -file "/home/ise/Nregs_external_clock/Nreg_internal_clock.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"/home/ise/Nregs_external_clock/Nreg_internal_clock.twx\": $eInfo"
+# }
+INFO: [Timing 38-71] No path element with name in.IFD_DELAY found. It will be ignored.
+INFO: [Timing 38-71] No path element with name in.IFD_DELAY found. It will be ignored.
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Sep 12 20:15:26 2023...
+INFO: [Common 17-83] Releasing license: PlanAhead

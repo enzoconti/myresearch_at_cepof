@@ -1,0 +1,151 @@
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+bitgen -intstyle ise -f PPS_generator.ut PPS_generator.ncd 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/PPS1_generator/PPS_generator.xst" -ofn "/home/ise/PPS1_generator/PPS_generator.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_and_constraints.ucf -p xc3s500e-fg320-4 PPS_generator.ngc PPS_generator.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPS_generator_map.ncd PPS_generator.ngd PPS_generator.pcf 
+par -w -intstyle ise -ol high -t 1 PPS_generator_map.ncd PPS_generator.ncd PPS_generator.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPS_generator.twx PPS_generator.ncd -o PPS_generator.twr PPS_generator.pcf -ucf ports_and_constraints.ucf 

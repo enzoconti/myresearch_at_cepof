@@ -1,0 +1,20 @@
+// defining location
+NET "clkin" LOC = "B8";   // input clk header (K13=JA7 for external, B8 for internal)
+NET "clkout" LOC = "K13";  // output clk header (K13=JA7)
+//NET "raw_clk_out" LOC = "K12"; // output pin header for clk (JA2)
+
+// leds for debugging
+//NET "status[0]" LOC = "J14"; //LD0 on nexys2
+//NET "status[1]" LOC = "J15"; //LD1 on nexys2
+//NET "status[2]" LOC = "K15"; //LD2 on nexys2
+NET "locked" LOC = "K14"; //LD3 on nexys2
+
+#Created by Constraints Editor (xc3s500e-fg320-4) - 2023/08/30
+NET "clkin" CLOCK_DEDICATED_ROUTE = TRUE;
+NET "clkout" CLOCK_DEDICATED_ROUTE = TRUE;
+//NET "clkin" TNM_NET = clkin;
+//TIMESPEC TS_clk = PERIOD "clkin" 3 ns HIGH 50%;
+
+//NET "clkout" TNM_NET = clkout;
+//TIMESPEC TS_clk = PERIOD "clkout" 3 ns HIGH 50%;
+

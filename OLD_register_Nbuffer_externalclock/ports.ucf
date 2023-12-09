@@ -1,0 +1,9 @@
+// defining location
+NET "in" LOC = "L16"; 	// input pin header (JA8)
+NET "out" LOC = "L17";	// output pin header (JA3)
+NET "clk" LOC = "K13";   // external clock input pin header (JA7)
+#Created by Constraints Editor (xc3s500e-fg320-4) - 2023/06/26
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 10 ns HIGH 50%;
+NET "in" OFFSET = IN 10 ns VALID 10 ns BEFORE "clk" RISING;
+NET "out" OFFSET = OUT 10 ns AFTER "clk";

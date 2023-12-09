@@ -1,0 +1,3 @@
+// defining location
+NET "in" LOC = "L15"; 	// input pin header (JA1)
+NET "out" LOC = "L16";	// output pin header (JA8)

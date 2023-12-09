@@ -1,0 +1,4 @@
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "clk" LOC = "B18";
+NET "in" LOC = "G18";
+NET "out" LOC = "J14";

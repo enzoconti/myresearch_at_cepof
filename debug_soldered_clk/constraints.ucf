@@ -1,0 +1,11 @@
+NET "switch" LOC = "G18"; // SW0 switch
+NET "button" LOC = "B18"; // button 0
+NET "jumper" LOC = "L15" ; // JA1 jumper
+NET "clk" LOC = "B8"; // internal crystal, reosldered onto external pcb connector
+//NET "clk" buffer_type=none ; // THIS IS A CLOCK
+NET "led" LOC = "J14"; // LD0 for debuging signal to resoldered crystal
+
+
+NET "led_switch" LOC = "J15"; // LD1 for debugging switch
+NET "led_button" LOC = "K15"; // LD2 for debugging buttton
+NET "led_jumper" LOC = "K14"; // LD3 for debugging jumper

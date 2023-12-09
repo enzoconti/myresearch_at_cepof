@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Nregs_external_clock/Nreg_external_clock.ncd
+OUTFILE=/home/ise/Nregs_external_clock/Nreg_external_clock.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/ise/Nregs_external_clock
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Thu Aug 10 01:18:23 2023
+# Process ID: 7954
+# Log file: /home/ise/register_Nbuffer_externalclock/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/register_Nbuffer_externalclock/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/register_Nbuffer_externalclock/pa.fromNcd.tcl

@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Nov 07 23:47:25 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clkin" LOCATE = SITE "B8" LEVEL 1;
+PIN clkin_pin<0> = BEL "clkin" PINNAME PAD;
+PIN "clkin_pin<0>" CLOCK_DEDICATED_ROUTE;
+COMP "clkout" LOCATE = SITE "K13" LEVEL 1;
+PIN clkout_pin<0> = BEL "clkout" PINNAME PAD;
+PIN "clkout_pin<0>" CLOCK_DEDICATED_ROUTE;
+COMP "locked" LOCATE = SITE "K14" LEVEL 1;
+SCHEMATIC END;
+

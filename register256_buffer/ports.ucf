@@ -1,0 +1,12 @@
+// defining location
+NET "in" LOC = "L15"; 	// input pin header (JA1)
+NET "out" LOC = "K12";	// output pin header (JA2)
+NET "raw_in" LOC = "L17"; // output of the raw input (JA3)
+//NET "out_led" LOC = "J14"; //led0
+NET "clk" LOC = "B8";   // Nexus2 Crystal connection to Spartan3E Chip
+#Created by Constraints Editor (xc3s500e-fg320-4) - 2023/05/19
+NET "clk" TNM_NET = clk;
+#Created by Constraints Editor (xc3s500e-fg320-4) - 2023/05/19
+TIMESPEC TS_clk = PERIOD "clk" 10 ns HIGH 50%;
+NET "in" OFFSET = IN 10 ns VALID 10 ns BEFORE "clk" RISING;
+NET "out" OFFSET = OUT 10 ns AFTER "clk";

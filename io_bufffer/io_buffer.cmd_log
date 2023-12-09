@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "/home/ise/io_bufffer/io_buffer.xst" -ofn "/home/ise/io_bufffer/io_buffer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 io_buffer.ngc io_buffer.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o io_buffer_map.ncd io_buffer.ngd io_buffer.pcf 
+par -w -intstyle ise -ol high -t 1 io_buffer_map.ncd io_buffer.ncd io_buffer.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml io_buffer.twx io_buffer.ncd -o io_buffer.twr io_buffer.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 io_buffer.ngc io_buffer.ngd  
+xst -intstyle ise -ifn "/home/ise/io_bufffer/io_buffer.xst" -ofn "/home/ise/io_bufffer/io_buffer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc io_buffer_constraints.ucf -uc io_buffer.ucf -p xc3s500e-fg320-4 io_buffer.ngc io_buffer.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o io_buffer_map.ncd io_buffer.ngd io_buffer.pcf 
+par -w -intstyle ise -ol high -t 1 io_buffer_map.ncd io_buffer.ncd io_buffer.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml io_buffer.twx io_buffer.ncd -o io_buffer.twr io_buffer.pcf -ucf io_buffer_constraints.ucf -ucf io_buffer.ucf 
+bitgen -intstyle ise -f io_buffer.ut io_buffer.ncd 
+bitgen -intstyle ise -f io_buffer.ut io_buffer.ncd 

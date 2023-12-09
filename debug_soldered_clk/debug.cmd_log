@@ -1,0 +1,108 @@
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 debug.ngc debug.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o debug_map.ncd debug.ngd debug.pcf 
+par -w -intstyle ise -ol high -t 1 debug_map.ncd debug.ncd debug.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml debug.twx debug.ncd -o debug.twr debug.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f debug.ut debug.ncd 
+xst -intstyle ise -ifn "/home/ise/debug_soldered_clk/debug.xst" -ofn "/home/ise/debug_soldered_clk/debug.syr" 

@@ -1,0 +1,16 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Aug 22 19:13:17 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "in" LOCATE = SITE "L15" LEVEL 1;
+COMP "out" LOCATE = SITE "L16" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "r4/Mshreg_out/SRL16E" BEL "r4/out" BEL
+        "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+COMP "in" OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "clk" "RISING";
+COMP "out" OFFSET = OUT 10 ns AFTER COMP "clk";
+SCHEMATIC END;
+

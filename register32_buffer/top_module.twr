@@ -1,0 +1,340 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml top_module.twx top_module.ncd -o top_module.twr
+top_module.pcf -ucf ports.ucf
+
+Design file:              top_module.ncd
+Physical constraint file: top_module.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   2.014ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.986ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 1.007ns (Twpl)
+  Physical resource: genblock[31].ri/out/CLK
+  Logical resource: genblock[31].ri/Mshreg_out_1/SRL16E/WS
+  Location pin: SLICE_X66Y30.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 7.986ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 1.007ns (Twph)
+  Physical resource: genblock[31].ri/out/CLK
+  Logical resource: genblock[31].ri/Mshreg_out_1/SRL16E/WS
+  Location pin: SLICE_X66Y30.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 7.986ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.014ns (496.524MHz) (Tcp)
+  Physical resource: genblock[31].ri/out/CLK
+  Logical resource: genblock[31].ri/Mshreg_out_1/SRL16E/WS
+  Location pin: SLICE_X66Y30.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "in" OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "clk" 
+"RISING";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum allowable offset is   4.265ns.
+--------------------------------------------------------------------------------
+
+Paths for end point genblock[31].ri/Mshreg_out_0/SRLC16E (SLICE_X66Y30.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     5.735ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               in (PAD)
+  Destination:          genblock[31].ri/Mshreg_out_0/SRLC16E (FF)
+  Destination Clock:    clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      6.651ns (Levels of Logic = 2)
+  Clock Path Delay:     2.386ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: in to genblock[31].ri/Mshreg_out_0/SRLC16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    L15.I                Tiopi                 1.300   in
+                                                       in
+                                                       in_IBUF
+    SLICE_X66Y30.BY      net (fanout=1)        4.909   in_IBUF
+    SLICE_X66Y30.CLK     Tds                   0.442   genblock[31].ri/out
+                                                       genblock[31].ri/Mshreg_out_0/SRLC16E
+    -------------------------------------------------  ---------------------------
+    Total                                      6.651ns (1.742ns logic, 4.909ns route)
+                                                       (26.2% logic, 73.8% route)
+
+  Minimum Clock Path: clk to genblock[31].ri/Mshreg_out_0/SRLC16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.040   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.036   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X66Y30.CLK     net (fanout=1)        0.144   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.386ns (2.206ns logic, 0.180ns route)
+                                                       (92.5% logic, 7.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: COMP "in" OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "clk" "RISING";
+--------------------------------------------------------------------------------
+
+Paths for end point genblock[31].ri/Mshreg_out_0/SRLC16E (SLICE_X66Y30.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.867ns (requirement - (clock path + clock arrival + uncertainty - data path))
+  Source:               in (PAD)
+  Destination:          genblock[31].ri/Mshreg_out_0/SRLC16E (FF)
+  Destination Clock:    clk_BUFGP rising at 0.000ns
+  Requirement:          0.000ns
+  Data Path Delay:      4.840ns (Levels of Logic = 2)
+  Clock Path Delay:     2.973ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: in to genblock[31].ri/Mshreg_out_0/SRLC16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    L15.I                Tiopi                 1.040   in
+                                                       in
+                                                       in_IBUF
+    SLICE_X66Y30.BY      net (fanout=1)        3.927   in_IBUF
+    SLICE_X66Y30.CLK     Tdh         (-Th)     0.127   genblock[31].ri/out
+                                                       genblock[31].ri/Mshreg_out_0/SRLC16E
+    -------------------------------------------------  ---------------------------
+    Total                                      4.840ns (0.913ns logic, 3.927ns route)
+                                                       (18.9% logic, 81.1% route)
+
+  Maximum Clock Path: clk to genblock[31].ri/Mshreg_out_0/SRLC16E
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.300   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.046   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X66Y30.CLK     net (fanout=1)        0.170   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.973ns (2.757ns logic, 0.216ns route)
+                                                       (92.7% logic, 7.3% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "out" OFFSET = OUT 10 ns AFTER COMP "clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.145ns.
+--------------------------------------------------------------------------------
+
+Paths for end point out (L16.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.855ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               genblock[31].ri/out (FF)
+  Destination:          out (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.172ns (Levels of Logic = 1)
+  Clock Path Delay:     2.973ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to genblock[31].ri/out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.300   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.046   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X66Y30.CLK     net (fanout=1)        0.170   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.973ns (2.757ns logic, 0.216ns route)
+                                                       (92.7% logic, 7.3% route)
+
+  Maximum Data Path: genblock[31].ri/out to out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X66Y30.XQ      Tcko                  0.592   genblock[31].ri/out
+                                                       genblock[31].ri/out
+    L16.O1               net (fanout=1)        0.332   genblock[31].ri/out
+    L16.PAD              Tioop                 3.248   out
+                                                       out_OBUF
+                                                       out
+    -------------------------------------------------  ---------------------------
+    Total                                      4.172ns (3.840ns logic, 0.332ns route)
+                                                       (92.0% logic, 8.0% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "out" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point out (L16.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.859ns (clock arrival + clock path + data path - uncertainty)
+  Source:               genblock[31].ri/out (FF)
+  Destination:          out (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.473ns (Levels of Logic = 1)
+  Clock Path Delay:     2.386ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to genblock[31].ri/out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.040   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.036   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X66Y30.CLK     net (fanout=1)        0.144   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.386ns (2.206ns logic, 0.180ns route)
+                                                       (92.5% logic, 7.5% route)
+
+  Minimum Data Path: genblock[31].ri/out to out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X66Y30.XQ      Tcko                  0.474   genblock[31].ri/out
+                                                       genblock[31].ri/out
+    L16.O1               net (fanout=1)        0.265   genblock[31].ri/out
+    L16.PAD              Tioop                 2.734   out
+                                                       out_OBUF
+                                                       out
+    -------------------------------------------------  ---------------------------
+    Total                                      3.473ns (3.208ns logic, 0.265ns route)
+                                                       (92.4% logic, 7.6% route)
+
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+in          |    4.265(R)|   -1.867(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+out         |    7.145(R)|clk_BUFGP         |   0.000|
+------------+------------+------------------+--------+
+
+COMP "in" OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "clk" "RISING";
+Worst Case Data Window 2.398; Ideal Clock Offset To Actual Clock -1.934; 
+------------------+------------+------------+---------+---------+-------------+
+                  |            |            |  Setup  |  Hold   |Source Offset|
+Source            |   Setup    |    Hold    |  Slack  |  Slack  |  To Center  |
+------------------+------------+------------+---------+---------+-------------+
+in                |    4.265(R)|   -1.867(R)|    5.735|    1.867|        1.934|
+------------------+------------+------------+---------+---------+-------------+
+Worst Case Summary|       4.265|      -1.867|    5.735|    1.867|             |
+------------------+------------+------------+---------+---------+-------------+
+
+COMP "out" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+out                                            |        7.145|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2 paths, 0 nets, and 4 connections
+
+Design statistics:
+   Minimum period:   2.014ns{1}   (Maximum frequency: 496.524MHz)
+   Minimum input required time before clock:   4.265ns
+   Minimum output required time after clock:   7.145ns
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri May 19 19:40:29 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 359 MB
+
+
+

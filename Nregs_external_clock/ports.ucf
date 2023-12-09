@@ -1,0 +1,21 @@
+// defining location
+NET "in" LOC = "L15"; 	// input pin header (JA1)
+NET "out" LOC = "L17";	// output pin header (JA3)
+NET "clk" LOC = "B8";   // external clock input pin header (JA7)
+// NET "clk" LOC = "K13";   // external clock input pin header (JA7)
+NET "raw_clk" LOC = "K12"; // output pin header for clk (JA2)
+
+NET "leds[0]" LOC = "J14"; // Led0 on board
+NET "leds[1]" LOC = "J15"; // Led1 on board
+NET "leds[2]" LOC = "K15"; // Led2 on board
+NET "leds[3]" LOC = "K14"; // Led3 on board
+NET "leds[4]" LOC = "E17"; // Led4 on board
+NET "leds[5]" LOC = "P15"; // Led5 on board
+NET "leds[6]" LOC = "F4";  // Led6 on board
+NET "leds[7]" LOC = "R4";  // Led7 on board
+
+#Created by Constraints Editor (xc3s500e-fg320-4) - 2023/08/30
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 10 ns HIGH 50%;
+NET "in" OFFSET = IN 10 ns VALID 10 ns BEFORE "clk" RISING;
+NET "out" OFFSET = OUT 10 ns AFTER "clk";

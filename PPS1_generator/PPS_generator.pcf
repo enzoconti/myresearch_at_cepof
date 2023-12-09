@@ -1,0 +1,34 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Dec 01 20:44:11 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led" LOCATE = SITE "J14" LEVEL 1;
+COMP "clk" LOCATE = SITE "K13" LEVEL 1;
+COMP "PPS1_out" LOCATE = SITE "L15" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "led" BEL "n_clocks_4" BEL "n_clocks_5" BEL "n_clocks_6" BEL
+        "n_clocks_7" BEL "n_clocks_8" BEL "n_clocks_9" BEL "n_clocks_10" BEL
+        "n_clocks_11" BEL "n_clocks_12" BEL "n_clocks_13" BEL "n_clocks_14"
+        BEL "n_clocks_15" BEL "n_clocks_16" BEL "n_clocks_17" BEL
+        "n_clocks_18" BEL "n_clocks_19" BEL "n_clocks_20" BEL "n_clocks_21"
+        BEL "n_clocks_22" BEL "n_clocks_23" BEL "n_clocks_24" BEL
+        "n_clocks_25" BEL "PPS_counter/counter_out_0" BEL
+        "PPS_counter/counter_out_1" BEL "PPS_counter/counter_out_2" BEL
+        "PPS_counter/counter_out_3" BEL "PPS_counter/counter_out_4" BEL
+        "PPS_counter/counter_out_5" BEL "PPS_counter/counter_out_6" BEL
+        "PPS_counter/counter_out_7" BEL "PPS_counter/counter_out_8" BEL
+        "PPS_counter/counter_out_9" BEL "PPS_counter/counter_out_10" BEL
+        "PPS_counter/counter_out_11" BEL "PPS_counter/counter_out_12" BEL
+        "PPS_counter/counter_out_13" BEL "PPS_counter/counter_out_14" BEL
+        "PPS_counter/counter_out_15" BEL "PPS_counter/counter_out_16" BEL
+        "PPS_counter/counter_out_17" BEL "PPS_counter/counter_out_18" BEL
+        "PPS_counter/counter_out_19" BEL "PPS_counter/counter_out_20" BEL
+        "PPS_counter/counter_out_21" BEL "PPS_counter/counter_out_22" BEL
+        "PPS_counter/counter_out_23" BEL "PPS_counter/counter_out_24" BEL
+        "PPS_counter/counter_out_25" BEL "clk_BUFGP/BUFG.GCLKMUX" BEL
+        "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+COMP "PPS1_out" OFFSET = OUT 10 ns AFTER COMP "clk";
+SCHEMATIC END;
+

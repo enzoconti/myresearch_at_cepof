@@ -1,0 +1,578 @@
+#:C89    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   SPARC M2.1 P.20131013
+#Current Working Directory:
+#:D   /home/ise/PPS1_generator
+#Host Name:
+#:H   localhost.localdomain
+#Date/Time:
+#:T   Fri Dec  1 20:44:57 2023
+#------------------------------
+	#Reading PPS_generator.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+	#   "PPS_generator" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+	#Design creation date: 2023.12.01.20.44.11
+	#Building chip graphics...
+	#Loading speed info...
+	#Recovery will playback 159 commands
+	##:C159   
+	##Xilinx FPGA Editor Command Log File
+	##Editor Version:
+	##:V   SPARC M2.1 P.20131013
+	##Current Working Directory:
+	##:D   /home/ise/PPS1_generator
+	##Host Name:
+	##:H   localhost.localdomain
+	##Date/Time:
+	##:T   Fri Dec  1 20:20:22 2023
+	##------------------------------
+	#	#Reading PPS_generator.ncd...
+	#	#Loading device for application Rf_Device from file '3s500e.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+	#	#   "PPS_generator" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+	#	#Design creation date: 2023.12.01.07.17.33
+	#	#Building chip graphics...
+	#	#Loading speed info...
+	#	#Recovery will playback 9 commands
+	#	##:C9     
+	#	##Xilinx FPGA Editor Command Log File
+	#	##Editor Version:
+	#	##:V   SPARC M2.1 P.20131013
+	#	##Current Working Directory:
+	#	##:D   /home/ise/PPS1_generator
+	#	##Host Name:
+	#	##:H   localhost.localdomain
+	#	##Date/Time:
+	#	##:T   Fri Dec  1 07:20:02 2023
+	#	##------------------------------
+	#	#	#Reading PPS_generator.ncd...
+	#	#	#Loading device for application Rf_Device from file '3s500e.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+	#	#	#   "PPS_generator" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+	#	#	#Design creation date: 2023.12.01.07.17.33
+	#	#	#Building chip graphics...
+	#	#	#Loading speed info...
+	#	#	#1
+	#	#setattr main edit-mode no-logic-changes
+	#	#	#2
+	#	#setattr main disable_draw on
+	#	#	#3
+	#	#setattr layer components view on
+	#	#	#4
+	#	#setattr main disable_draw off
+	#	#	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#	#	#5
+	#	#setattr main disable_draw on
+	#	#	#6
+	#	#setattr layer components view off
+	#	#	#7
+	#	#setattr main disable_draw off
+	#	#	#8
+	#	#setattr main disable_draw on
+	#	#	#9
+	#	#setattr layer routes view on
+	#	#Script "PPS_generator_fpga_editor.rcv" playback halted.
+	#	#1
+	#setattr main edit-mode no-logic-changes
+	#	#2
+	#unselect -all
+	#	#3
+	#unselect -all
+	#	#4
+	#unselect -all
+	#	#5
+	#unselect -all
+	#	#6
+	#setattr main disable_draw on
+	#	#7
+	#setattr layer local_lines view off
+	#	#8
+	#setattr main disable_draw off
+	#	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#	#9
+	#setattr main disable_draw on
+	#	#10
+	#setattr layer long_lines view off
+	#	#11
+	#setattr main disable_draw off
+	#	#12
+	#setattr main disable_draw on
+	#	#13
+	#setattr layer pinwires view off
+	#	#14
+	#setattr main disable_draw off
+	#	#15
+	#setattr main disable_draw on
+	#	#16
+	#setattr layer pips view off
+	#	#17
+	#setattr main disable_draw off
+	#	#18
+	#setattr main disable_draw on
+	#	#19
+	#setattr layer sites view off
+	#	#20
+	#setattr main disable_draw off
+	#	#21
+	#setattr main disable_draw on
+	#	#22
+	#setattr layer switch_boxes view off
+	#	#23
+	#setattr main disable_draw off
+	#	#24
+	#setattr main disable_draw on
+	#	#25
+	#setattr layer switch_boxes view on
+	#	#26
+	#setattr main disable_draw off
+	#	#27
+	#setattr main disable_draw on
+	#	#28
+	#setattr layer components view off
+	#	#29
+	#setattr main disable_draw off
+	#	#30
+	#setattr main disable_draw on
+	#	#31
+	#setattr layer components view on
+	#	#32
+	#setattr main disable_draw off
+	#	#33
+	#setattr main disable_draw on
+	#	#34
+	#setattr layer routes view off
+	#	#35
+	#setattr main disable_draw off
+	#	#36
+	#setattr main disable_draw on
+	#	#37
+	#setattr layer routes view on
+	#	#38
+	#setattr main disable_draw off
+	#	#39
+	#setattr main disable_draw on
+	#	#40
+	#setattr layer ratsnests view off
+	#	#41
+	#setattr main disable_draw off
+	#	#42
+	#setattr main disable_draw on
+	#	#43
+	#setattr layer ratsnests view on
+	#	#44
+	#setattr main disable_draw off
+	#	#45
+	#setattr main disable_draw on
+	#	#46
+	#setattr layer ratsnests view off
+	#	#47
+	#setattr main disable_draw off
+	#	#48
+	#setattr main disable_draw on
+	#	#49
+	#setattr layer ratsnests view on
+	#	#50
+	#setattr main disable_draw off
+	#	#51
+	#setattr main disable_draw on
+	#	#52
+	#setattr layer components view off
+	#	#53
+	#setattr main disable_draw off
+	#	#54
+	#setattr main disable_draw on
+	#	#55
+	#setattr layer routes view off
+	#	#56
+	#setattr main disable_draw off
+	#	#57
+	#setattr main disable_draw on
+	#	#58
+	#setattr layer ratsnests view off
+	#	#59
+	#setattr main disable_draw off
+	#	#60
+	#setattr main disable_draw on
+	#	#61
+	#setattr layer text view off
+	#	#62
+	#setattr main disable_draw off
+	#	#63
+	#setattr main disable_draw on
+	#	#64
+	#setattr layer text view on
+	#	#65
+	#setattr main disable_draw off
+	#	#66
+	#setattr main disable_draw on
+	#	#67
+	#setattr layer clock_regions view off
+	#	#68
+	#setattr main disable_draw off
+	#	#69
+	#setattr main disable_draw on
+	#	#70
+	#setattr layer clock_regions view on
+	#	#71
+	#setattr main disable_draw off
+	#	#72
+	#setattr main disable_draw on
+	#	#73
+	#setattr layer hard_macros view off
+	#	#74
+	#setattr main disable_draw off
+	#	#75
+	#setattr main disable_draw on
+	#	#76
+	#setattr layer hard_macros view on
+	#	#77
+	#setattr main disable_draw off
+	#	#78
+	#setattr main disable_draw on
+	#	#79
+	#setattr layer user_rpms view off
+	#	#80
+	#setattr main disable_draw off
+	#	#81
+	#setattr main disable_draw on
+	#	#82
+	#setattr layer user_rpms view on
+	#	#83
+	#setattr main disable_draw off
+	#	#84
+	#setattr main disable_draw on
+	#	#85
+	#setattr layer tool_rpms view off
+	#	#86
+	#setattr main disable_draw off
+	#	#87
+	#setattr main disable_draw on
+	#	#88
+	#setattr layer tool_rpms view on
+	#	#89
+	#setattr main disable_draw off
+	#	#90
+	#unselect -all
+	#	#91
+	#unselect -all
+	#	#92
+	#unselect -all
+	#	#93
+	#unselect -all
+	#	#94
+	#unselect -all
+	#	#95
+	#post attr
+	#	#Getting available speed grades of the device...
+	#	#Getting available speed grades of the device...
+	#	#96
+	#unpost main
+	#	#97
+	#unselect -all
+	#	#98
+	#unselect -all
+	#	#99
+	#select -k comp 'n_clocks<7>'
+	#	#100
+	#unselect comp 'n_clocks<7>'
+	#	#101
+	#select -k comp 'n_clocks<5>'
+	#	#102
+	#unselect comp 'n_clocks<5>'
+	#	#103
+	#select -k comp 'Mcompar_led_cmp_lt0000_cy<7>'
+	#	#104
+	#unselect comp 'Mcompar_led_cmp_lt0000_cy<7>'
+	#	#105
+	#select -k comp 'Mcompar_led_cmp_lt0000_cy<5>'
+	#	#106
+	#unselect comp 'Mcompar_led_cmp_lt0000_cy<5>'
+	#	#107
+	#select -k comp 'Mcompar_led_cmp_lt0000_cy<3>'
+	#	#108
+	#unselect comp 'Mcompar_led_cmp_lt0000_cy<3>'
+	#	#109
+	#select -k comp 'Mcompar_led_cmp_lt0000_cy<1>'
+	#	#110
+	#unselect comp 'Mcompar_led_cmp_lt0000_cy<1>'
+	#	#111
+	#select -k comp 'led_OBUF'
+	#	#112
+	#setattr main disable_draw on
+	#	#113
+	#setattr layer switch_boxes view off
+	#	#114
+	#setattr main disable_draw off
+	#	#115
+	#setattr main disable_draw on
+	#	#116
+	#setattr layer switch_boxes view on
+	#	#117
+	#setattr main disable_draw off
+	#	#118
+	#setattr main disable_draw on
+	#	#119
+	#setattr layer components view on
+	#	#120
+	#setattr main disable_draw off
+	#	#121
+	#setattr main disable_draw on
+	#	#122
+	#setattr layer components view off
+	#	#123
+	#setattr main disable_draw off
+	#	#124
+	#setattr main disable_draw on
+	#	#125
+	#setattr layer routes view on
+	#	#126
+	#setattr main disable_draw off
+	#	#127
+	#setattr main disable_draw on
+	#	#128
+	#setattr layer routes view off
+	#	#129
+	#setattr main disable_draw off
+	#	#130
+	#setattr main disable_draw on
+	#	#131
+	#setattr layer ratsnests view on
+	#	#132
+	#setattr main disable_draw off
+	#	#133
+	#setattr main disable_draw on
+	#	#134
+	#setattr layer ratsnests view off
+	#	#135
+	#setattr main disable_draw off
+	#	#136
+	#setattr main disable_draw on
+	#	#137
+	#setattr layer text view off
+	#	#138
+	#setattr main disable_draw off
+	#	#139
+	#setattr main disable_draw on
+	#	#140
+	#setattr layer text view on
+	#	#141
+	#setattr main disable_draw off
+	#	#142
+	#setattr main disable_draw on
+	#	#143
+	#setattr layer clock_regions view off
+	#	#144
+	#setattr main disable_draw off
+	#	#145
+	#setattr main disable_draw on
+	#	#146
+	#setattr layer clock_regions view on
+	#	#147
+	#setattr main disable_draw off
+	#	#148
+	#setattr main disable_draw on
+	#	#149
+	#setattr layer clock_regions view off
+	#	#150
+	#setattr main disable_draw off
+	#	#151
+	#setattr main disable_draw on
+	#	#152
+	#setattr layer text view off
+	#	#153
+	#setattr main disable_draw off
+	#	#154
+	#setattr main disable_draw on
+	#	#155
+	#setattr layer text view on
+	#	#156
+	#setattr main disable_draw off
+	#	#157
+	#setattr main disable_draw on
+	#	#158
+	#setattr layer text view off
+	#	#159
+	#setattr main disable_draw off
+	#Script "PPS_generator_fpga_editor.rcv" playback halted.
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+setattr main disable_draw on
+	#3
+setattr layer long_lines view off
+	#4
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#5
+setattr main disable_draw on
+	#6
+setattr layer sites view off
+	#7
+setattr main disable_draw off
+	#8
+setattr main disable_draw on
+	#9
+setattr layer sites view on
+	#10
+setattr main disable_draw off
+	#11
+setattr main disable_draw on
+	#12
+setattr layer routes view on
+	#13
+setattr main disable_draw off
+	#14
+setattr main disable_draw on
+	#15
+setattr layer routes view off
+	#16
+setattr main disable_draw off
+	#17
+setattr main disable_draw on
+	#18
+setattr layer ratsnests view on
+	#19
+setattr main disable_draw off
+	#20
+setattr main disable_draw on
+	#21
+setattr layer ratsnests view off
+	#22
+setattr main disable_draw off
+	#23
+setattr main disable_draw on
+	#24
+setattr layer routes view on
+	#25
+setattr main disable_draw off
+	#26
+setattr main disable_draw on
+	#27
+setattr layer routes view off
+	#28
+setattr main disable_draw off
+	#29
+setattr main disable_draw on
+	#30
+setattr layer ratsnests view on
+	#31
+setattr main disable_draw off
+	#32
+setattr main disable_draw on
+	#33
+setattr layer ratsnests view off
+	#34
+setattr main disable_draw off
+	#35
+setattr main disable_draw on
+	#36
+setattr layer clock_regions view on
+	#37
+setattr main disable_draw off
+	#38
+setattr main disable_draw on
+	#39
+setattr layer clock_regions view off
+	#40
+setattr main disable_draw off
+	#41
+setattr main disable_draw on
+	#42
+setattr layer hard_macros view on
+	#43
+setattr main disable_draw off
+	#44
+setattr main disable_draw on
+	#45
+setattr layer user_rpms view on
+	#46
+setattr main disable_draw off
+	#47
+setattr main disable_draw on
+	#48
+setattr layer hard_macros view off
+	#49
+setattr main disable_draw off
+	#50
+setattr main disable_draw on
+	#51
+setattr layer user_rpms view off
+	#52
+setattr main disable_draw off
+	#53
+setattr main disable_draw on
+	#54
+setattr layer pinwires view on
+	#55
+setattr main disable_draw off
+	#56
+setattr main disable_draw on
+	#57
+setattr layer pinwires view off
+	#58
+setattr main disable_draw off
+	#59
+setattr main disable_draw on
+	#60
+setattr layer pips view on
+	#61
+setattr main disable_draw off
+	#62
+setattr main disable_draw on
+	#63
+setattr layer pips view off
+	#64
+setattr main disable_draw off
+	#65
+setattr main disable_draw on
+	#66
+setattr layer long_lines view on
+	#67
+setattr main disable_draw off
+	#68
+setattr main disable_draw on
+	#69
+setattr layer long_lines view off
+	#70
+setattr main disable_draw off
+	#71
+setattr main disable_draw on
+	#72
+setattr layer local_lines view on
+	#73
+setattr main disable_draw off
+	#74
+setattr main disable_draw on
+	#75
+setattr layer local_lines view off
+	#76
+setattr main disable_draw off
+	#77
+setattr main disable_draw on
+	#78
+setattr layer pinwires view on
+	#79
+setattr main disable_draw off
+	#80
+setattr main disable_draw on
+	#81
+setattr layer pinwires view off
+	#82
+setattr main disable_draw off
+	#83
+setattr main disable_draw on
+	#84
+setattr layer components view on
+	#85
+setattr main disable_draw off
+	#86
+setattr main disable_draw on
+	#87
+setattr layer components view off
+	#88
+setattr main disable_draw off
+	#89
+setattr main disable_draw on
+	#90
+setattr layer routes view on
+	#91
+setattr main disable_draw off

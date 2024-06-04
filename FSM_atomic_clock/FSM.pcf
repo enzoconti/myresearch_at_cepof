@@ -1,0 +1,72 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Apr 13 00:12:42 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "state_bin<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "state_bin<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "state_bin<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "state_bin<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "state_announcement<0>" LOCATE = SITE "L15" LEVEL 1;
+COMP "state_announcement<1>" LOCATE = SITE "K12" LEVEL 1;
+COMP "state_announcement<2>" LOCATE = SITE "L17" LEVEL 1;
+COMP "state_announcement<3>" LOCATE = SITE "M15" LEVEL 1;
+COMP "state_announcement<4>" LOCATE = SITE "K13" LEVEL 1;
+COMP "state_announcement<5>" LOCATE = SITE "L16" LEVEL 1;
+COMP "state_announcement<6>" LOCATE = SITE "M14" LEVEL 1;
+COMP "state_announcement<7>" LOCATE = SITE "M16" LEVEL 1;
+COMP "state_announcement<8>" LOCATE = SITE "M13" LEVEL 1;
+COMP "state_announcement<9>" LOCATE = SITE "R18" LEVEL 1;
+COMP "reset" LOCATE = SITE "B18" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "next_state_0" BEL "reset_clk" BEL "state_bin_0" BEL
+        "state_bin_1" BEL "state_bin_2" BEL "state_bin_3" BEL
+        "state_announcement_0" BEL "state_announcement_1" BEL
+        "state_announcement_2" BEL "state_announcement_3" BEL
+        "state_announcement_4" BEL "state_announcement_5" BEL
+        "state_announcement_6" BEL "state_announcement_7" BEL
+        "state_announcement_8" BEL "state_announcement_9" BEL
+        "PPS_counter/counter_out_26" BEL "PPS_counter/counter_out_25" BEL
+        "PPS_counter/counter_out_24" BEL "PPS_counter/counter_out_23" BEL
+        "PPS_counter/counter_out_22" BEL "PPS_counter/counter_out_21" BEL
+        "PPS_counter/counter_out_20" BEL "PPS_counter/counter_out_19" BEL
+        "PPS_counter/counter_out_18" BEL "PPS_counter/counter_out_17" BEL
+        "PPS_counter/counter_out_16" BEL "PPS_counter/counter_out_15" BEL
+        "PPS_counter/counter_out_14" BEL "PPS_counter/counter_out_13" BEL
+        "PPS_counter/counter_out_12" BEL "PPS_counter/counter_out_11" BEL
+        "PPS_counter/counter_out_10" BEL "PPS_counter/counter_out_9" BEL
+        "PPS_counter/counter_out_8" BEL "PPS_counter/counter_out_7" BEL
+        "PPS_counter/counter_out_6" BEL "PPS_counter/counter_out_5" BEL
+        "PPS_counter/counter_out_4" BEL "PPS_counter/counter_out_3" BEL
+        "PPS_counter/counter_out_2" BEL "PPS_counter/counter_out_1" BEL
+        "PPS_counter/counter_out_0" BEL "state_announcer/state_announcement_1"
+        BEL "state_announcer/state_announcement_2" BEL
+        "state_announcer/state_announcement_4" BEL
+        "state_announcer/state_announcement_5" BEL
+        "state_announcer/state_announcement_3" BEL
+        "state_announcer/state_announcement_6" BEL
+        "state_announcer/state_announcement_7" BEL
+        "state_announcer/state_announcement_9" BEL
+        "state_announcer/state_announcement_0" BEL
+        "state_announcer/state_announcement_8" BEL "next_state_1" BEL
+        "next_state_2" BEL "next_state_3" BEL "clk_BUFGP/BUFG.GCLKMUX" BEL
+        "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+COMP "reset" OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "clk" "RISING";
+COMP "state_announcement<0>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_announcement<1>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_announcement<2>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_announcement<3>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_announcement<4>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_announcement<5>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_announcement<6>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_announcement<7>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_announcement<8>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_announcement<9>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_bin<0>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_bin<1>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_bin<2>" OFFSET = OUT 10 ns AFTER COMP "clk";
+COMP "state_bin<3>" OFFSET = OUT 10 ns AFTER COMP "clk";
+SCHEMATIC END;
+

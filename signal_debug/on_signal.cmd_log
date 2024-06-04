@@ -1,0 +1,76 @@
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 
+xst -intstyle ise -ifn "/home/ise/signal_debug/on_signal.xst" -ofn "/home/ise/signal_debug/on_signal.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ports_signak_debug.ucf -p xc3s500e-fg320-4 on_signal.ngc on_signal.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o on_signal_map.ncd on_signal.ngd on_signal.pcf 
+par -w -intstyle ise -ol high -t 1 on_signal_map.ncd on_signal.ncd on_signal.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml on_signal.twx on_signal.ncd -o on_signal.twr on_signal.pcf -ucf ports_signak_debug.ucf 
+bitgen -intstyle ise -f on_signal.ut on_signal.ncd 

@@ -1,0 +1,2488 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 5 -n
+3 -fastpaths -xml FSM.twx FSM.ncd -o FSM.twr FSM.pcf -ucf
+ports_an_constraints.ucf
+
+Design file:              FSM.ncd
+Physical constraint file: FSM.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 2064 paths analyzed, 199 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   7.665ns.
+--------------------------------------------------------------------------------
+
+Paths for end point reset_clk (SLICE_X54Y68.G1), 107 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     2.335ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PPS_counter/counter_out_1 (FF)
+  Destination:          reset_clk (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.665ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: PPS_counter/counter_out_1 to reset_clk
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y67.YQ      Tcko                  0.511   PPS_counter/counter_out<0>
+                                                       PPS_counter/counter_out_1
+    SLICE_X55Y73.F2      net (fanout=11)       1.732   PPS_counter/counter_out<1>
+    SLICE_X55Y73.COUT    Topcyf                1.011   Mcompar_next_state_cmp_ge0000_cy<1>4
+                                                       Mcompar_next_state_cmp_ge0000_lut<0>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<0>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<1>_3
+    SLICE_X55Y74.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<1>4
+    SLICE_X55Y74.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<3>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<2>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<3>_3
+    SLICE_X55Y75.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<3>4
+    SLICE_X55Y75.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<5>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<4>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<5>_3
+    SLICE_X55Y76.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<5>4
+    SLICE_X55Y76.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<7>3
+                                                       Mcompar_next_state_cmp_ge0000_cy<6>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<7>_3
+    SLICE_X55Y77.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<7>3
+    SLICE_X55Y77.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<9>1
+                                                       Mcompar_next_state_cmp_ge0000_cy<8>_2
+                                                       Mcompar_next_state_cmp_ge0000_cy<9>_2
+    SLICE_X55Y78.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<9>1
+    SLICE_X55Y78.XB      Tcinxb                0.352   next_state_cmp_ge0006
+                                                       Mcompar_next_state_cmp_ge0000_cy<10>_0
+    SLICE_X50Y79.F2      net (fanout=1)        0.600   next_state_cmp_ge0006
+    SLICE_X50Y79.X       Tif5x                 1.000   next_state_mux0000<3>_bdd3
+                                                       next_state_mux0000<3>541_G
+                                                       next_state_mux0000<3>541
+    SLICE_X54Y68.G1      net (fanout=4)        0.931   next_state_mux0000<3>_bdd3
+    SLICE_X54Y68.CLK     Tgck                  1.116   reset_clk
+                                                       reset_clk_mux00002_f6_F
+                                                       reset_clk_mux00002_f6
+                                                       reset_clk
+    -------------------------------------------------  ---------------------------
+    Total                                      7.665ns (4.402ns logic, 3.263ns route)
+                                                       (57.4% logic, 42.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.442ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PPS_counter/counter_out_4 (FF)
+  Destination:          reset_clk (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.558ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: PPS_counter/counter_out_4 to reset_clk
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y69.XQ      Tcko                  0.514   PPS_counter/counter_out<4>
+                                                       PPS_counter/counter_out_4
+    SLICE_X55Y73.F3      net (fanout=11)       1.622   PPS_counter/counter_out<4>
+    SLICE_X55Y73.COUT    Topcyf                1.011   Mcompar_next_state_cmp_ge0000_cy<1>4
+                                                       Mcompar_next_state_cmp_ge0000_lut<0>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<0>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<1>_3
+    SLICE_X55Y74.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<1>4
+    SLICE_X55Y74.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<3>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<2>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<3>_3
+    SLICE_X55Y75.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<3>4
+    SLICE_X55Y75.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<5>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<4>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<5>_3
+    SLICE_X55Y76.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<5>4
+    SLICE_X55Y76.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<7>3
+                                                       Mcompar_next_state_cmp_ge0000_cy<6>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<7>_3
+    SLICE_X55Y77.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<7>3
+    SLICE_X55Y77.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<9>1
+                                                       Mcompar_next_state_cmp_ge0000_cy<8>_2
+                                                       Mcompar_next_state_cmp_ge0000_cy<9>_2
+    SLICE_X55Y78.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<9>1
+    SLICE_X55Y78.XB      Tcinxb                0.352   next_state_cmp_ge0006
+                                                       Mcompar_next_state_cmp_ge0000_cy<10>_0
+    SLICE_X50Y79.F2      net (fanout=1)        0.600   next_state_cmp_ge0006
+    SLICE_X50Y79.X       Tif5x                 1.000   next_state_mux0000<3>_bdd3
+                                                       next_state_mux0000<3>541_G
+                                                       next_state_mux0000<3>541
+    SLICE_X54Y68.G1      net (fanout=4)        0.931   next_state_mux0000<3>_bdd3
+    SLICE_X54Y68.CLK     Tgck                  1.116   reset_clk
+                                                       reset_clk_mux00002_f6_F
+                                                       reset_clk_mux00002_f6
+                                                       reset_clk
+    -------------------------------------------------  ---------------------------
+    Total                                      7.558ns (4.405ns logic, 3.153ns route)
+                                                       (58.3% logic, 41.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.583ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PPS_counter/counter_out_2 (FF)
+  Destination:          reset_clk (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.417ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: PPS_counter/counter_out_2 to reset_clk
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y68.XQ      Tcko                  0.514   PPS_counter/counter_out<2>
+                                                       PPS_counter/counter_out_2
+    SLICE_X55Y73.F4      net (fanout=11)       1.481   PPS_counter/counter_out<2>
+    SLICE_X55Y73.COUT    Topcyf                1.011   Mcompar_next_state_cmp_ge0000_cy<1>4
+                                                       Mcompar_next_state_cmp_ge0000_lut<0>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<0>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<1>_3
+    SLICE_X55Y74.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<1>4
+    SLICE_X55Y74.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<3>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<2>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<3>_3
+    SLICE_X55Y75.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<3>4
+    SLICE_X55Y75.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<5>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<4>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<5>_3
+    SLICE_X55Y76.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<5>4
+    SLICE_X55Y76.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<7>3
+                                                       Mcompar_next_state_cmp_ge0000_cy<6>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<7>_3
+    SLICE_X55Y77.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<7>3
+    SLICE_X55Y77.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<9>1
+                                                       Mcompar_next_state_cmp_ge0000_cy<8>_2
+                                                       Mcompar_next_state_cmp_ge0000_cy<9>_2
+    SLICE_X55Y78.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<9>1
+    SLICE_X55Y78.XB      Tcinxb                0.352   next_state_cmp_ge0006
+                                                       Mcompar_next_state_cmp_ge0000_cy<10>_0
+    SLICE_X50Y79.F2      net (fanout=1)        0.600   next_state_cmp_ge0006
+    SLICE_X50Y79.X       Tif5x                 1.000   next_state_mux0000<3>_bdd3
+                                                       next_state_mux0000<3>541_G
+                                                       next_state_mux0000<3>541
+    SLICE_X54Y68.G1      net (fanout=4)        0.931   next_state_mux0000<3>_bdd3
+    SLICE_X54Y68.CLK     Tgck                  1.116   reset_clk
+                                                       reset_clk_mux00002_f6_F
+                                                       reset_clk_mux00002_f6
+                                                       reset_clk
+    -------------------------------------------------  ---------------------------
+    Total                                      7.417ns (4.405ns logic, 3.012ns route)
+                                                       (59.4% logic, 40.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point reset_clk (SLICE_X54Y68.F1), 107 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     2.340ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PPS_counter/counter_out_1 (FF)
+  Destination:          reset_clk (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.660ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: PPS_counter/counter_out_1 to reset_clk
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y67.YQ      Tcko                  0.511   PPS_counter/counter_out<0>
+                                                       PPS_counter/counter_out_1
+    SLICE_X55Y73.F2      net (fanout=11)       1.732   PPS_counter/counter_out<1>
+    SLICE_X55Y73.COUT    Topcyf                1.011   Mcompar_next_state_cmp_ge0000_cy<1>4
+                                                       Mcompar_next_state_cmp_ge0000_lut<0>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<0>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<1>_3
+    SLICE_X55Y74.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<1>4
+    SLICE_X55Y74.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<3>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<2>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<3>_3
+    SLICE_X55Y75.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<3>4
+    SLICE_X55Y75.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<5>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<4>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<5>_3
+    SLICE_X55Y76.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<5>4
+    SLICE_X55Y76.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<7>3
+                                                       Mcompar_next_state_cmp_ge0000_cy<6>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<7>_3
+    SLICE_X55Y77.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<7>3
+    SLICE_X55Y77.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<9>1
+                                                       Mcompar_next_state_cmp_ge0000_cy<8>_2
+                                                       Mcompar_next_state_cmp_ge0000_cy<9>_2
+    SLICE_X55Y78.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<9>1
+    SLICE_X55Y78.XB      Tcinxb                0.352   next_state_cmp_ge0006
+                                                       Mcompar_next_state_cmp_ge0000_cy<10>_0
+    SLICE_X50Y79.F2      net (fanout=1)        0.600   next_state_cmp_ge0006
+    SLICE_X50Y79.X       Tif5x                 1.000   next_state_mux0000<3>_bdd3
+                                                       next_state_mux0000<3>541_G
+                                                       next_state_mux0000<3>541
+    SLICE_X54Y68.F1      net (fanout=4)        0.926   next_state_mux0000<3>_bdd3
+    SLICE_X54Y68.CLK     Tfck                  1.116   reset_clk
+                                                       reset_clk_mux00002_f6_G
+                                                       reset_clk_mux00002_f6
+                                                       reset_clk
+    -------------------------------------------------  ---------------------------
+    Total                                      7.660ns (4.402ns logic, 3.258ns route)
+                                                       (57.5% logic, 42.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.447ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PPS_counter/counter_out_4 (FF)
+  Destination:          reset_clk (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.553ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: PPS_counter/counter_out_4 to reset_clk
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y69.XQ      Tcko                  0.514   PPS_counter/counter_out<4>
+                                                       PPS_counter/counter_out_4
+    SLICE_X55Y73.F3      net (fanout=11)       1.622   PPS_counter/counter_out<4>
+    SLICE_X55Y73.COUT    Topcyf                1.011   Mcompar_next_state_cmp_ge0000_cy<1>4
+                                                       Mcompar_next_state_cmp_ge0000_lut<0>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<0>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<1>_3
+    SLICE_X55Y74.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<1>4
+    SLICE_X55Y74.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<3>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<2>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<3>_3
+    SLICE_X55Y75.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<3>4
+    SLICE_X55Y75.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<5>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<4>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<5>_3
+    SLICE_X55Y76.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<5>4
+    SLICE_X55Y76.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<7>3
+                                                       Mcompar_next_state_cmp_ge0000_cy<6>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<7>_3
+    SLICE_X55Y77.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<7>3
+    SLICE_X55Y77.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<9>1
+                                                       Mcompar_next_state_cmp_ge0000_cy<8>_2
+                                                       Mcompar_next_state_cmp_ge0000_cy<9>_2
+    SLICE_X55Y78.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<9>1
+    SLICE_X55Y78.XB      Tcinxb                0.352   next_state_cmp_ge0006
+                                                       Mcompar_next_state_cmp_ge0000_cy<10>_0
+    SLICE_X50Y79.F2      net (fanout=1)        0.600   next_state_cmp_ge0006
+    SLICE_X50Y79.X       Tif5x                 1.000   next_state_mux0000<3>_bdd3
+                                                       next_state_mux0000<3>541_G
+                                                       next_state_mux0000<3>541
+    SLICE_X54Y68.F1      net (fanout=4)        0.926   next_state_mux0000<3>_bdd3
+    SLICE_X54Y68.CLK     Tfck                  1.116   reset_clk
+                                                       reset_clk_mux00002_f6_G
+                                                       reset_clk_mux00002_f6
+                                                       reset_clk
+    -------------------------------------------------  ---------------------------
+    Total                                      7.553ns (4.405ns logic, 3.148ns route)
+                                                       (58.3% logic, 41.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.588ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PPS_counter/counter_out_2 (FF)
+  Destination:          reset_clk (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.412ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: PPS_counter/counter_out_2 to reset_clk
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y68.XQ      Tcko                  0.514   PPS_counter/counter_out<2>
+                                                       PPS_counter/counter_out_2
+    SLICE_X55Y73.F4      net (fanout=11)       1.481   PPS_counter/counter_out<2>
+    SLICE_X55Y73.COUT    Topcyf                1.011   Mcompar_next_state_cmp_ge0000_cy<1>4
+                                                       Mcompar_next_state_cmp_ge0000_lut<0>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<0>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<1>_3
+    SLICE_X55Y74.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<1>4
+    SLICE_X55Y74.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<3>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<2>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<3>_3
+    SLICE_X55Y75.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<3>4
+    SLICE_X55Y75.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<5>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<4>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<5>_3
+    SLICE_X55Y76.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<5>4
+    SLICE_X55Y76.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<7>3
+                                                       Mcompar_next_state_cmp_ge0000_cy<6>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<7>_3
+    SLICE_X55Y77.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<7>3
+    SLICE_X55Y77.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<9>1
+                                                       Mcompar_next_state_cmp_ge0000_cy<8>_2
+                                                       Mcompar_next_state_cmp_ge0000_cy<9>_2
+    SLICE_X55Y78.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<9>1
+    SLICE_X55Y78.XB      Tcinxb                0.352   next_state_cmp_ge0006
+                                                       Mcompar_next_state_cmp_ge0000_cy<10>_0
+    SLICE_X50Y79.F2      net (fanout=1)        0.600   next_state_cmp_ge0006
+    SLICE_X50Y79.X       Tif5x                 1.000   next_state_mux0000<3>_bdd3
+                                                       next_state_mux0000<3>541_G
+                                                       next_state_mux0000<3>541
+    SLICE_X54Y68.F1      net (fanout=4)        0.926   next_state_mux0000<3>_bdd3
+    SLICE_X54Y68.CLK     Tfck                  1.116   reset_clk
+                                                       reset_clk_mux00002_f6_G
+                                                       reset_clk_mux00002_f6
+                                                       reset_clk
+    -------------------------------------------------  ---------------------------
+    Total                                      7.412ns (4.405ns logic, 3.007ns route)
+                                                       (59.4% logic, 40.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point next_state_0 (SLICE_X55Y69.G4), 107 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     2.531ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PPS_counter/counter_out_1 (FF)
+  Destination:          next_state_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.469ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: PPS_counter/counter_out_1 to next_state_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y67.YQ      Tcko                  0.511   PPS_counter/counter_out<0>
+                                                       PPS_counter/counter_out_1
+    SLICE_X55Y73.F2      net (fanout=11)       1.732   PPS_counter/counter_out<1>
+    SLICE_X55Y73.COUT    Topcyf                1.011   Mcompar_next_state_cmp_ge0000_cy<1>4
+                                                       Mcompar_next_state_cmp_ge0000_lut<0>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<0>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<1>_3
+    SLICE_X55Y74.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<1>4
+    SLICE_X55Y74.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<3>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<2>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<3>_3
+    SLICE_X55Y75.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<3>4
+    SLICE_X55Y75.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<5>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<4>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<5>_3
+    SLICE_X55Y76.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<5>4
+    SLICE_X55Y76.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<7>3
+                                                       Mcompar_next_state_cmp_ge0000_cy<6>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<7>_3
+    SLICE_X55Y77.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<7>3
+    SLICE_X55Y77.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<9>1
+                                                       Mcompar_next_state_cmp_ge0000_cy<8>_2
+                                                       Mcompar_next_state_cmp_ge0000_cy<9>_2
+    SLICE_X55Y78.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<9>1
+    SLICE_X55Y78.XB      Tcinxb                0.352   next_state_cmp_ge0006
+                                                       Mcompar_next_state_cmp_ge0000_cy<10>_0
+    SLICE_X50Y79.F2      net (fanout=1)        0.600   next_state_cmp_ge0006
+    SLICE_X50Y79.X       Tif5x                 1.000   next_state_mux0000<3>_bdd3
+                                                       next_state_mux0000<3>541_G
+                                                       next_state_mux0000<3>541
+    SLICE_X55Y69.G4      net (fanout=4)        0.845   next_state_mux0000<3>_bdd3
+    SLICE_X55Y69.CLK     Tgck                  1.006   next_state<0>
+                                                       next_state_mux0000<3>1_f6_F
+                                                       next_state_mux0000<3>1_f6
+                                                       next_state_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.469ns (4.292ns logic, 3.177ns route)
+                                                       (57.5% logic, 42.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.638ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PPS_counter/counter_out_4 (FF)
+  Destination:          next_state_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.362ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: PPS_counter/counter_out_4 to next_state_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y69.XQ      Tcko                  0.514   PPS_counter/counter_out<4>
+                                                       PPS_counter/counter_out_4
+    SLICE_X55Y73.F3      net (fanout=11)       1.622   PPS_counter/counter_out<4>
+    SLICE_X55Y73.COUT    Topcyf                1.011   Mcompar_next_state_cmp_ge0000_cy<1>4
+                                                       Mcompar_next_state_cmp_ge0000_lut<0>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<0>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<1>_3
+    SLICE_X55Y74.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<1>4
+    SLICE_X55Y74.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<3>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<2>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<3>_3
+    SLICE_X55Y75.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<3>4
+    SLICE_X55Y75.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<5>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<4>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<5>_3
+    SLICE_X55Y76.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<5>4
+    SLICE_X55Y76.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<7>3
+                                                       Mcompar_next_state_cmp_ge0000_cy<6>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<7>_3
+    SLICE_X55Y77.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<7>3
+    SLICE_X55Y77.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<9>1
+                                                       Mcompar_next_state_cmp_ge0000_cy<8>_2
+                                                       Mcompar_next_state_cmp_ge0000_cy<9>_2
+    SLICE_X55Y78.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<9>1
+    SLICE_X55Y78.XB      Tcinxb                0.352   next_state_cmp_ge0006
+                                                       Mcompar_next_state_cmp_ge0000_cy<10>_0
+    SLICE_X50Y79.F2      net (fanout=1)        0.600   next_state_cmp_ge0006
+    SLICE_X50Y79.X       Tif5x                 1.000   next_state_mux0000<3>_bdd3
+                                                       next_state_mux0000<3>541_G
+                                                       next_state_mux0000<3>541
+    SLICE_X55Y69.G4      net (fanout=4)        0.845   next_state_mux0000<3>_bdd3
+    SLICE_X55Y69.CLK     Tgck                  1.006   next_state<0>
+                                                       next_state_mux0000<3>1_f6_F
+                                                       next_state_mux0000<3>1_f6
+                                                       next_state_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.362ns (4.295ns logic, 3.067ns route)
+                                                       (58.3% logic, 41.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     2.779ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               PPS_counter/counter_out_2 (FF)
+  Destination:          next_state_0 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      7.221ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: PPS_counter/counter_out_2 to next_state_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y68.XQ      Tcko                  0.514   PPS_counter/counter_out<2>
+                                                       PPS_counter/counter_out_2
+    SLICE_X55Y73.F4      net (fanout=11)       1.481   PPS_counter/counter_out<2>
+    SLICE_X55Y73.COUT    Topcyf                1.011   Mcompar_next_state_cmp_ge0000_cy<1>4
+                                                       Mcompar_next_state_cmp_ge0000_lut<0>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<0>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<1>_3
+    SLICE_X55Y74.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<1>4
+    SLICE_X55Y74.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<3>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<2>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<3>_3
+    SLICE_X55Y75.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<3>4
+    SLICE_X55Y75.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<5>4
+                                                       Mcompar_next_state_cmp_ge0000_cy<4>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<5>_3
+    SLICE_X55Y76.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<5>4
+    SLICE_X55Y76.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<7>3
+                                                       Mcompar_next_state_cmp_ge0000_cy<6>_3
+                                                       Mcompar_next_state_cmp_ge0000_cy<7>_3
+    SLICE_X55Y77.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<7>3
+    SLICE_X55Y77.COUT    Tbyp                  0.103   Mcompar_next_state_cmp_ge0000_cy<9>1
+                                                       Mcompar_next_state_cmp_ge0000_cy<8>_2
+                                                       Mcompar_next_state_cmp_ge0000_cy<9>_2
+    SLICE_X55Y78.CIN     net (fanout=1)        0.000   Mcompar_next_state_cmp_ge0000_cy<9>1
+    SLICE_X55Y78.XB      Tcinxb                0.352   next_state_cmp_ge0006
+                                                       Mcompar_next_state_cmp_ge0000_cy<10>_0
+    SLICE_X50Y79.F2      net (fanout=1)        0.600   next_state_cmp_ge0006
+    SLICE_X50Y79.X       Tif5x                 1.000   next_state_mux0000<3>_bdd3
+                                                       next_state_mux0000<3>541_G
+                                                       next_state_mux0000<3>541
+    SLICE_X55Y69.G4      net (fanout=4)        0.845   next_state_mux0000<3>_bdd3
+    SLICE_X55Y69.CLK     Tgck                  1.006   next_state<0>
+                                                       next_state_mux0000<3>1_f6_F
+                                                       next_state_mux0000<3>1_f6
+                                                       next_state_0
+    -------------------------------------------------  ---------------------------
+    Total                                      7.221ns (4.295ns logic, 2.926ns route)
+                                                       (59.5% logic, 40.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement_5 (SLICE_X64Y44.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.859ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               state_announcer/state_announcement_5 (FF)
+  Destination:          state_announcement_5 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.860ns (Levels of Logic = 0)
+  Clock Path Skew:      0.001ns (0.122 - 0.121)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: state_announcer/state_announcement_5 to state_announcement_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y46.XQ      Tcko                  0.411   state_announcer/state_announcement<5>
+                                                       state_announcer/state_announcement_5
+    SLICE_X64Y44.BX      net (fanout=2)        0.333   state_announcer/state_announcement<5>
+    SLICE_X64Y44.CLK     Tckdi       (-Th)    -0.116   state_announcement_5
+                                                       state_announcement_5
+    -------------------------------------------------  ---------------------------
+    Total                                      0.860ns (0.527ns logic, 0.333ns route)
+                                                       (61.3% logic, 38.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin_3 (SLICE_X54Y62.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.860ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               next_state_3 (FF)
+  Destination:          state_bin_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.858ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.002ns (0.001 - 0.003)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: next_state_3 to state_bin_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y64.YQ      Tcko                  0.409   next_state<3>
+                                                       next_state_3
+    SLICE_X54Y62.BX      net (fanout=3)        0.333   next_state<3>
+    SLICE_X54Y62.CLK     Tckdi       (-Th)    -0.116   state_bin_3
+                                                       state_bin_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.858ns (0.525ns logic, 0.333ns route)
+                                                       (61.2% logic, 38.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin_1 (SLICE_X54Y66.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.889ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               next_state_1 (FF)
+  Destination:          state_bin_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.890ns (Levels of Logic = 0)
+  Clock Path Skew:      0.001ns (0.004 - 0.003)
+  Source Clock:         clk_BUFGP rising at 10.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: next_state_1 to state_bin_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y65.YQ      Tcko                  0.409   next_state<1>
+                                                       next_state_1
+    SLICE_X54Y66.BX      net (fanout=2)        0.365   next_state<1>
+    SLICE_X54Y66.CLK     Tckdi       (-Th)    -0.116   state_bin_1
+                                                       state_bin_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.890ns (0.525ns logic, 0.365ns route)
+                                                       (59.0% logic, 41.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.562ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.719ns (Tcl)
+  Physical resource: state_announcer/state_announcement<3>/CLK
+  Logical resource: state_announcer/state_announcement_3/CK
+  Location pin: SLICE_X64Y41.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 8.562ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.719ns (Tch)
+  Physical resource: state_announcer/state_announcement<3>/CLK
+  Logical resource: state_announcer/state_announcement_3/CK
+  Location pin: SLICE_X64Y41.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 8.562ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.719ns (Tcl)
+  Physical resource: reset_clk/CLK
+  Logical resource: reset_clk/CK
+  Location pin: SLICE_X54Y68.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "reset" OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "clk" 
+"RISING";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 36 paths analyzed, 36 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Minimum allowable offset is   5.544ns.
+--------------------------------------------------------------------------------
+
+Paths for end point PPS_counter/counter_out_26 (SLICE_X45Y80.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     4.456ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               reset (PAD)
+  Destination:          PPS_counter/counter_out_26 (FF)
+  Destination Clock:    clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.760ns (Levels of Logic = 1)
+  Clock Path Delay:     2.216ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: reset to PPS_counter/counter_out_26
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B18.I                Tiopi                 1.131   reset
+                                                       reset
+                                                       reset_IBUF
+    SLICE_X45Y80.SR      net (fanout=21)       5.835   reset_IBUF
+    SLICE_X45Y80.CLK     Tsrck                 0.794   PPS_counter/counter_out<26>
+                                                       PPS_counter/counter_out_26
+    -------------------------------------------------  ---------------------------
+    Total                                      7.760ns (1.925ns logic, 5.835ns route)
+                                                       (24.8% logic, 75.2% route)
+
+  Minimum Clock Path: clk to PPS_counter/counter_out_26
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X45Y80.CLK     net (fanout=35)       0.113   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.216ns (2.071ns logic, 0.145ns route)
+                                                       (93.5% logic, 6.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point PPS_counter/counter_out_24 (SLICE_X45Y79.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     4.671ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               reset (PAD)
+  Destination:          PPS_counter/counter_out_24 (FF)
+  Destination Clock:    clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.543ns (Levels of Logic = 1)
+  Clock Path Delay:     2.214ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: reset to PPS_counter/counter_out_24
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B18.I                Tiopi                 1.131   reset
+                                                       reset
+                                                       reset_IBUF
+    SLICE_X45Y79.SR      net (fanout=21)       5.618   reset_IBUF
+    SLICE_X45Y79.CLK     Tsrck                 0.794   PPS_counter/counter_out<24>
+                                                       PPS_counter/counter_out_24
+    -------------------------------------------------  ---------------------------
+    Total                                      7.543ns (1.925ns logic, 5.618ns route)
+                                                       (25.5% logic, 74.5% route)
+
+  Minimum Clock Path: clk to PPS_counter/counter_out_24
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X45Y79.CLK     net (fanout=35)       0.111   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.214ns (2.071ns logic, 0.143ns route)
+                                                       (93.5% logic, 6.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point PPS_counter/counter_out_25 (SLICE_X45Y79.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     4.671ns (requirement - (data path - clock path - clock arrival + uncertainty))
+  Source:               reset (PAD)
+  Destination:          PPS_counter/counter_out_25 (FF)
+  Destination Clock:    clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      7.543ns (Levels of Logic = 1)
+  Clock Path Delay:     2.214ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: reset to PPS_counter/counter_out_25
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B18.I                Tiopi                 1.131   reset
+                                                       reset
+                                                       reset_IBUF
+    SLICE_X45Y79.SR      net (fanout=21)       5.618   reset_IBUF
+    SLICE_X45Y79.CLK     Tsrck                 0.794   PPS_counter/counter_out<24>
+                                                       PPS_counter/counter_out_25
+    -------------------------------------------------  ---------------------------
+    Total                                      7.543ns (1.925ns logic, 5.618ns route)
+                                                       (25.5% logic, 74.5% route)
+
+  Minimum Clock Path: clk to PPS_counter/counter_out_25
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X45Y79.CLK     net (fanout=35)       0.111   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.214ns (2.071ns logic, 0.143ns route)
+                                                       (93.5% logic, 6.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: COMP "reset" OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "clk" "RISING";
+--------------------------------------------------------------------------------
+
+Paths for end point next_state_1 (SLICE_X55Y65.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.061ns (requirement - (clock path + clock arrival + uncertainty - data path))
+  Source:               reset (PAD)
+  Destination:          next_state_1 (FF)
+  Destination Clock:    clk_BUFGP rising at 0.000ns
+  Requirement:          0.000ns
+  Data Path Delay:      2.806ns (Levels of Logic = 1)
+  Clock Path Delay:     2.745ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: reset to next_state_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B18.I                Tiopi                 0.905   reset
+                                                       reset
+                                                       reset_IBUF
+    SLICE_X55Y65.SR      net (fanout=21)       1.410   reset_IBUF
+    SLICE_X55Y65.CLK     Tcksr       (-Th)    -0.491   next_state<1>
+                                                       next_state_1
+    -------------------------------------------------  ---------------------------
+    Total                                      2.806ns (1.396ns logic, 1.410ns route)
+                                                       (49.8% logic, 50.2% route)
+
+  Maximum Clock Path: clk to next_state_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X55Y65.CLK     net (fanout=35)       0.117   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.745ns (2.588ns logic, 0.157ns route)
+                                                       (94.3% logic, 5.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point next_state_3 (SLICE_X55Y64.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.061ns (requirement - (clock path + clock arrival + uncertainty - data path))
+  Source:               reset (PAD)
+  Destination:          next_state_3 (FF)
+  Destination Clock:    clk_BUFGP rising at 0.000ns
+  Requirement:          0.000ns
+  Data Path Delay:      2.806ns (Levels of Logic = 1)
+  Clock Path Delay:     2.745ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: reset to next_state_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B18.I                Tiopi                 0.905   reset
+                                                       reset
+                                                       reset_IBUF
+    SLICE_X55Y64.SR      net (fanout=21)       1.410   reset_IBUF
+    SLICE_X55Y64.CLK     Tcksr       (-Th)    -0.491   next_state<3>
+                                                       next_state_3
+    -------------------------------------------------  ---------------------------
+    Total                                      2.806ns (1.396ns logic, 1.410ns route)
+                                                       (49.8% logic, 50.2% route)
+
+  Maximum Clock Path: clk to next_state_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X55Y64.CLK     net (fanout=35)       0.117   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.745ns (2.588ns logic, 0.157ns route)
+                                                       (94.3% logic, 5.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point PPS_counter/counter_out_0 (SLICE_X45Y67.SR), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.162ns (requirement - (clock path + clock arrival + uncertainty - data path))
+  Source:               reset (PAD)
+  Destination:          PPS_counter/counter_out_0 (FF)
+  Destination Clock:    clk_BUFGP rising at 0.000ns
+  Requirement:          0.000ns
+  Data Path Delay:      2.906ns (Levels of Logic = 1)
+  Clock Path Delay:     2.744ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: reset to PPS_counter/counter_out_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B18.I                Tiopi                 0.905   reset
+                                                       reset
+                                                       reset_IBUF
+    SLICE_X45Y67.SR      net (fanout=21)       1.510   reset_IBUF
+    SLICE_X45Y67.CLK     Tcksr       (-Th)    -0.491   PPS_counter/counter_out<0>
+                                                       PPS_counter/counter_out_0
+    -------------------------------------------------  ---------------------------
+    Total                                      2.906ns (1.396ns logic, 1.510ns route)
+                                                       (48.0% logic, 52.0% route)
+
+  Maximum Clock Path: clk to PPS_counter/counter_out_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X45Y67.CLK     net (fanout=35)       0.116   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.744ns (2.588ns logic, 0.156ns route)
+                                                       (94.3% logic, 5.7% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<0>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.311ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<0> (L15.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.689ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_0 (FF)
+  Destination:          state_announcement<0> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.524ns (Levels of Logic = 1)
+  Clock Path Delay:     2.787ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X64Y42.CLK     net (fanout=35)       0.159   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.787ns (2.588ns logic, 0.199ns route)
+                                                       (92.9% logic, 7.1% route)
+
+  Maximum Data Path: state_announcement_0 to state_announcement<0>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y42.YQ      Tcko                  0.567   state_announcement_1
+                                                       state_announcement_0
+    L15.O1               net (fanout=1)        1.070   state_announcement_0
+    L15.PAD              Tioop                 2.887   state_announcement<0>
+                                                       state_announcement_0_OBUF
+                                                       state_announcement<0>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.524ns (3.454ns logic, 1.070ns route)
+                                                       (76.3% logic, 23.7% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<0>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<0> (L15.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.987ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_0 (FF)
+  Destination:          state_announcement<0> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.749ns (Levels of Logic = 1)
+  Clock Path Delay:     2.238ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X64Y42.CLK     net (fanout=35)       0.135   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.238ns (2.071ns logic, 0.167ns route)
+                                                       (92.5% logic, 7.5% route)
+
+  Minimum Data Path: state_announcement_0 to state_announcement<0>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y42.YQ      Tcko                  0.454   state_announcement_1
+                                                       state_announcement_0
+    L15.O1               net (fanout=1)        0.856   state_announcement_0
+    L15.PAD              Tioop                 2.439   state_announcement<0>
+                                                       state_announcement_0_OBUF
+                                                       state_announcement<0>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.749ns (2.893ns logic, 0.856ns route)
+                                                       (77.2% logic, 22.8% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<1>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   6.959ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<1> (K12.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  3.041ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_1 (FF)
+  Destination:          state_announcement<1> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.172ns (Levels of Logic = 1)
+  Clock Path Delay:     2.787ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X64Y42.CLK     net (fanout=35)       0.159   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.787ns (2.588ns logic, 0.199ns route)
+                                                       (92.9% logic, 7.1% route)
+
+  Maximum Data Path: state_announcement_1 to state_announcement<1>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y42.XQ      Tcko                  0.515   state_announcement_1
+                                                       state_announcement_1
+    K12.O1               net (fanout=1)        0.770   state_announcement_1
+    K12.PAD              Tioop                 2.887   state_announcement<1>
+                                                       state_announcement_1_OBUF
+                                                       state_announcement<1>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.172ns (3.402ns logic, 0.770ns route)
+                                                       (81.5% logic, 18.5% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<1>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<1> (K12.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.705ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_1 (FF)
+  Destination:          state_announcement<1> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.467ns (Levels of Logic = 1)
+  Clock Path Delay:     2.238ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X64Y42.CLK     net (fanout=35)       0.135   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.238ns (2.071ns logic, 0.167ns route)
+                                                       (92.5% logic, 7.5% route)
+
+  Minimum Data Path: state_announcement_1 to state_announcement<1>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y42.XQ      Tcko                  0.412   state_announcement_1
+                                                       state_announcement_1
+    K12.O1               net (fanout=1)        0.616   state_announcement_1
+    K12.PAD              Tioop                 2.439   state_announcement<1>
+                                                       state_announcement_1_OBUF
+                                                       state_announcement<1>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.467ns (2.851ns logic, 0.616ns route)
+                                                       (82.2% logic, 17.8% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<2>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   6.705ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<2> (L17.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  3.295ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_2 (FF)
+  Destination:          state_announcement<2> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      3.925ns (Levels of Logic = 1)
+  Clock Path Delay:     2.780ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y35.CLK     net (fanout=35)       0.152   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.780ns (2.588ns logic, 0.192ns route)
+                                                       (93.1% logic, 6.9% route)
+
+  Maximum Data Path: state_announcement_2 to state_announcement<2>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y35.YQ      Tcko                  0.511   state_announcement_3
+                                                       state_announcement_2
+    L17.O1               net (fanout=1)        0.527   state_announcement_2
+    L17.PAD              Tioop                 2.887   state_announcement<2>
+                                                       state_announcement_2_OBUF
+                                                       state_announcement<2>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.925ns (3.398ns logic, 0.527ns route)
+                                                       (86.6% logic, 13.4% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<2>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<2> (L17.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.501ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_2 (FF)
+  Destination:          state_announcement<2> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.269ns (Levels of Logic = 1)
+  Clock Path Delay:     2.232ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y35.CLK     net (fanout=35)       0.129   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.232ns (2.071ns logic, 0.161ns route)
+                                                       (92.8% logic, 7.2% route)
+
+  Minimum Data Path: state_announcement_2 to state_announcement<2>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y35.YQ      Tcko                  0.409   state_announcement_3
+                                                       state_announcement_2
+    L17.O1               net (fanout=1)        0.421   state_announcement_2
+    L17.PAD              Tioop                 2.439   state_announcement<2>
+                                                       state_announcement_2_OBUF
+                                                       state_announcement<2>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.269ns (2.848ns logic, 0.421ns route)
+                                                       (87.1% logic, 12.9% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<3>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.259ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<3> (M15.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.741ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_3 (FF)
+  Destination:          state_announcement<3> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.479ns (Levels of Logic = 1)
+  Clock Path Delay:     2.780ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y35.CLK     net (fanout=35)       0.152   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.780ns (2.588ns logic, 0.192ns route)
+                                                       (93.1% logic, 6.9% route)
+
+  Maximum Data Path: state_announcement_3 to state_announcement<3>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y35.XQ      Tcko                  0.514   state_announcement_3
+                                                       state_announcement_3
+    M15.O1               net (fanout=1)        1.078   state_announcement_3
+    M15.PAD              Tioop                 2.887   state_announcement<3>
+                                                       state_announcement_3_OBUF
+                                                       state_announcement<3>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.479ns (3.401ns logic, 1.078ns route)
+                                                       (75.9% logic, 24.1% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<3>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<3> (M15.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.944ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_3 (FF)
+  Destination:          state_announcement<3> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.712ns (Levels of Logic = 1)
+  Clock Path Delay:     2.232ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y35.CLK     net (fanout=35)       0.129   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.232ns (2.071ns logic, 0.161ns route)
+                                                       (92.8% logic, 7.2% route)
+
+  Minimum Data Path: state_announcement_3 to state_announcement<3>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y35.XQ      Tcko                  0.411   state_announcement_3
+                                                       state_announcement_3
+    M15.O1               net (fanout=1)        0.862   state_announcement_3
+    M15.PAD              Tioop                 2.439   state_announcement<3>
+                                                       state_announcement_3_OBUF
+                                                       state_announcement<3>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.712ns (2.850ns logic, 0.862ns route)
+                                                       (76.8% logic, 23.2% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<4>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.012ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<4> (K13.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.988ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_4 (FF)
+  Destination:          state_announcement<4> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.224ns (Levels of Logic = 1)
+  Clock Path Delay:     2.788ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X64Y44.CLK     net (fanout=35)       0.160   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.788ns (2.588ns logic, 0.200ns route)
+                                                       (92.8% logic, 7.2% route)
+
+  Maximum Data Path: state_announcement_4 to state_announcement<4>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y44.YQ      Tcko                  0.567   state_announcement_5
+                                                       state_announcement_4
+    K13.O1               net (fanout=1)        0.770   state_announcement_4
+    K13.PAD              Tioop                 2.887   state_announcement<4>
+                                                       state_announcement_4_OBUF
+                                                       state_announcement<4>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.224ns (3.454ns logic, 0.770ns route)
+                                                       (81.8% logic, 18.2% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<4>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<4> (K13.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.748ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_4 (FF)
+  Destination:          state_announcement<4> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.509ns (Levels of Logic = 1)
+  Clock Path Delay:     2.239ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X64Y44.CLK     net (fanout=35)       0.136   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.239ns (2.071ns logic, 0.168ns route)
+                                                       (92.5% logic, 7.5% route)
+
+  Minimum Data Path: state_announcement_4 to state_announcement<4>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y44.YQ      Tcko                  0.454   state_announcement_5
+                                                       state_announcement_4
+    K13.O1               net (fanout=1)        0.616   state_announcement_4
+    K13.PAD              Tioop                 2.439   state_announcement<4>
+                                                       state_announcement_4_OBUF
+                                                       state_announcement<4>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.509ns (2.893ns logic, 0.616ns route)
+                                                       (82.4% logic, 17.6% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<5>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.030ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<5> (L16.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.970ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_5 (FF)
+  Destination:          state_announcement<5> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.242ns (Levels of Logic = 1)
+  Clock Path Delay:     2.788ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X64Y44.CLK     net (fanout=35)       0.160   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.788ns (2.588ns logic, 0.200ns route)
+                                                       (92.8% logic, 7.2% route)
+
+  Maximum Data Path: state_announcement_5 to state_announcement<5>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y44.XQ      Tcko                  0.515   state_announcement_5
+                                                       state_announcement_5
+    L16.O1               net (fanout=1)        0.840   state_announcement_5
+    L16.PAD              Tioop                 2.887   state_announcement<5>
+                                                       state_announcement_5_OBUF
+                                                       state_announcement<5>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.242ns (3.402ns logic, 0.840ns route)
+                                                       (80.2% logic, 19.8% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<5>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<5> (L16.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.762ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_5 (FF)
+  Destination:          state_announcement<5> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.523ns (Levels of Logic = 1)
+  Clock Path Delay:     2.239ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X64Y44.CLK     net (fanout=35)       0.136   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.239ns (2.071ns logic, 0.168ns route)
+                                                       (92.5% logic, 7.5% route)
+
+  Minimum Data Path: state_announcement_5 to state_announcement<5>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y44.XQ      Tcko                  0.412   state_announcement_5
+                                                       state_announcement_5
+    L16.O1               net (fanout=1)        0.672   state_announcement_5
+    L16.PAD              Tioop                 2.439   state_announcement<5>
+                                                       state_announcement_5_OBUF
+                                                       state_announcement<5>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.523ns (2.851ns logic, 0.672ns route)
+                                                       (80.9% logic, 19.1% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<6>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.474ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<6> (M14.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.526ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_6 (FF)
+  Destination:          state_announcement<6> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.702ns (Levels of Logic = 1)
+  Clock Path Delay:     2.772ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y28.CLK     net (fanout=35)       0.144   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.772ns (2.588ns logic, 0.184ns route)
+                                                       (93.4% logic, 6.6% route)
+
+  Maximum Data Path: state_announcement_6 to state_announcement<6>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y28.YQ      Tcko                  0.511   state_announcement_7
+                                                       state_announcement_6
+    M14.O1               net (fanout=1)        1.304   state_announcement_6
+    M14.PAD              Tioop                 2.887   state_announcement<6>
+                                                       state_announcement_6_OBUF
+                                                       state_announcement<6>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.702ns (3.398ns logic, 1.304ns route)
+                                                       (72.3% logic, 27.7% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<6>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<6> (M14.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  6.117ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_6 (FF)
+  Destination:          state_announcement<6> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.891ns (Levels of Logic = 1)
+  Clock Path Delay:     2.226ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y28.CLK     net (fanout=35)       0.123   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.226ns (2.071ns logic, 0.155ns route)
+                                                       (93.0% logic, 7.0% route)
+
+  Minimum Data Path: state_announcement_6 to state_announcement<6>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y28.YQ      Tcko                  0.409   state_announcement_7
+                                                       state_announcement_6
+    M14.O1               net (fanout=1)        1.043   state_announcement_6
+    M14.PAD              Tioop                 2.439   state_announcement<6>
+                                                       state_announcement_6_OBUF
+                                                       state_announcement<6>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.891ns (2.848ns logic, 1.043ns route)
+                                                       (73.2% logic, 26.8% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<7>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.170ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<7> (M16.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.830ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_7 (FF)
+  Destination:          state_announcement<7> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.398ns (Levels of Logic = 1)
+  Clock Path Delay:     2.772ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y28.CLK     net (fanout=35)       0.144   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.772ns (2.588ns logic, 0.184ns route)
+                                                       (93.4% logic, 6.6% route)
+
+  Maximum Data Path: state_announcement_7 to state_announcement<7>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y28.XQ      Tcko                  0.514   state_announcement_7
+                                                       state_announcement_7
+    M16.O1               net (fanout=1)        0.997   state_announcement_7
+    M16.PAD              Tioop                 2.887   state_announcement<7>
+                                                       state_announcement_7_OBUF
+                                                       state_announcement<7>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.398ns (3.401ns logic, 0.997ns route)
+                                                       (77.3% logic, 22.7% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<7>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<7> (M16.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.873ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_7 (FF)
+  Destination:          state_announcement<7> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.647ns (Levels of Logic = 1)
+  Clock Path Delay:     2.226ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y28.CLK     net (fanout=35)       0.123   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.226ns (2.071ns logic, 0.155ns route)
+                                                       (93.0% logic, 7.0% route)
+
+  Minimum Data Path: state_announcement_7 to state_announcement<7>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y28.XQ      Tcko                  0.411   state_announcement_7
+                                                       state_announcement_7
+    M16.O1               net (fanout=1)        0.797   state_announcement_7
+    M16.PAD              Tioop                 2.439   state_announcement<7>
+                                                       state_announcement_7_OBUF
+                                                       state_announcement<7>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.647ns (2.850ns logic, 0.797ns route)
+                                                       (78.1% logic, 21.9% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<8>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   6.960ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<8> (M13.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  3.040ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_8 (FF)
+  Destination:          state_announcement<8> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.168ns (Levels of Logic = 1)
+  Clock Path Delay:     2.792ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y21.CLK     net (fanout=35)       0.164   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.792ns (2.588ns logic, 0.204ns route)
+                                                       (92.7% logic, 7.3% route)
+
+  Maximum Data Path: state_announcement_8 to state_announcement<8>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y21.YQ      Tcko                  0.511   state_announcement_9
+                                                       state_announcement_8
+    M13.O1               net (fanout=1)        0.770   state_announcement_8
+    M13.PAD              Tioop                 2.887   state_announcement<8>
+                                                       state_announcement_8_OBUF
+                                                       state_announcement<8>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.168ns (3.398ns logic, 0.770ns route)
+                                                       (81.5% logic, 18.5% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<8>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<8> (M13.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.706ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_8 (FF)
+  Destination:          state_announcement<8> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.464ns (Levels of Logic = 1)
+  Clock Path Delay:     2.242ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y21.CLK     net (fanout=35)       0.139   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.242ns (2.071ns logic, 0.171ns route)
+                                                       (92.4% logic, 7.6% route)
+
+  Minimum Data Path: state_announcement_8 to state_announcement<8>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y21.YQ      Tcko                  0.409   state_announcement_9
+                                                       state_announcement_8
+    M13.O1               net (fanout=1)        0.616   state_announcement_8
+    M13.PAD              Tioop                 2.439   state_announcement<8>
+                                                       state_announcement_8_OBUF
+                                                       state_announcement<8>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.464ns (2.848ns logic, 0.616ns route)
+                                                       (82.2% logic, 17.8% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_announcement<9>" OFFSET = OUT 10 ns AFTER COMP 
+"clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.259ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<9> (R18.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.741ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_announcement_9 (FF)
+  Destination:          state_announcement<9> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      4.467ns (Levels of Logic = 1)
+  Clock Path Delay:     2.792ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_announcement_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y21.CLK     net (fanout=35)       0.164   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.792ns (2.588ns logic, 0.204ns route)
+                                                       (92.7% logic, 7.3% route)
+
+  Maximum Data Path: state_announcement_9 to state_announcement<9>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y21.XQ      Tcko                  0.514   state_announcement_9
+                                                       state_announcement_9
+    R18.O1               net (fanout=1)        1.066   state_announcement_9
+    R18.PAD              Tioop                 2.887   state_announcement<9>
+                                                       state_announcement_9_OBUF
+                                                       state_announcement<9>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.467ns (3.401ns logic, 1.066ns route)
+                                                       (76.1% logic, 23.9% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_announcement<9>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_announcement<9> (R18.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  5.945ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_announcement_9 (FF)
+  Destination:          state_announcement<9> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      3.703ns (Levels of Logic = 1)
+  Clock Path Delay:     2.242ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_announcement_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X65Y21.CLK     net (fanout=35)       0.139   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.242ns (2.071ns logic, 0.171ns route)
+                                                       (92.4% logic, 7.6% route)
+
+  Minimum Data Path: state_announcement_9 to state_announcement<9>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X65Y21.XQ      Tcko                  0.411   state_announcement_9
+                                                       state_announcement_9
+    R18.O1               net (fanout=1)        0.853   state_announcement_9
+    R18.PAD              Tioop                 2.439   state_announcement<9>
+                                                       state_announcement_9_OBUF
+                                                       state_announcement<9>
+    -------------------------------------------------  ---------------------------
+    Total                                      3.703ns (2.850ns logic, 0.853ns route)
+                                                       (77.0% logic, 23.0% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_bin<0>" OFFSET = OUT 10 ns AFTER COMP "clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.855ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin<0> (J14.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.145ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_bin_0 (FF)
+  Destination:          state_bin<0> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      5.109ns (Levels of Logic = 1)
+  Clock Path Delay:     2.746ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_bin_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X54Y66.CLK     net (fanout=35)       0.118   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.746ns (2.588ns logic, 0.158ns route)
+                                                       (94.2% logic, 5.8% route)
+
+  Maximum Data Path: state_bin_0 to state_bin<0>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y66.YQ      Tcko                  0.567   state_bin_1
+                                                       state_bin_0
+    J14.O1               net (fanout=24)       1.655   state_bin_0
+    J14.PAD              Tioop                 2.887   state_bin<0>
+                                                       state_bin_0_OBUF
+                                                       state_bin<0>
+    -------------------------------------------------  ---------------------------
+    Total                                      5.109ns (3.454ns logic, 1.655ns route)
+                                                       (67.6% logic, 32.4% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_bin<0>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin<0> (J14.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  6.420ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_bin_0 (FF)
+  Destination:          state_bin<0> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      4.217ns (Levels of Logic = 1)
+  Clock Path Delay:     2.203ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_bin_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X54Y66.CLK     net (fanout=35)       0.100   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.203ns (2.071ns logic, 0.132ns route)
+                                                       (94.0% logic, 6.0% route)
+
+  Minimum Data Path: state_bin_0 to state_bin<0>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y66.YQ      Tcko                  0.454   state_bin_1
+                                                       state_bin_0
+    J14.O1               net (fanout=24)       1.324   state_bin_0
+    J14.PAD              Tioop                 2.439   state_bin<0>
+                                                       state_bin_0_OBUF
+                                                       state_bin<0>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.217ns (2.893ns logic, 1.324ns route)
+                                                       (68.6% logic, 31.4% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_bin<1>" OFFSET = OUT 10 ns AFTER COMP "clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   8.476ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin<1> (J15.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  1.524ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_bin_1 (FF)
+  Destination:          state_bin<1> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      5.730ns (Levels of Logic = 1)
+  Clock Path Delay:     2.746ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_bin_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X54Y66.CLK     net (fanout=35)       0.118   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.746ns (2.588ns logic, 0.158ns route)
+                                                       (94.2% logic, 5.8% route)
+
+  Maximum Data Path: state_bin_1 to state_bin<1>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y66.XQ      Tcko                  0.515   state_bin_1
+                                                       state_bin_1
+    J15.O1               net (fanout=26)       2.328   state_bin_1
+    J15.PAD              Tioop                 2.887   state_bin<1>
+                                                       state_bin_1_OBUF
+                                                       state_bin<1>
+    -------------------------------------------------  ---------------------------
+    Total                                      5.730ns (3.402ns logic, 2.328ns route)
+                                                       (59.4% logic, 40.6% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_bin<1>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin<1> (J15.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  6.916ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_bin_1 (FF)
+  Destination:          state_bin<1> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      4.713ns (Levels of Logic = 1)
+  Clock Path Delay:     2.203ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_bin_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X54Y66.CLK     net (fanout=35)       0.100   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.203ns (2.071ns logic, 0.132ns route)
+                                                       (94.0% logic, 6.0% route)
+
+  Minimum Data Path: state_bin_1 to state_bin<1>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y66.XQ      Tcko                  0.412   state_bin_1
+                                                       state_bin_1
+    J15.O1               net (fanout=26)       1.862   state_bin_1
+    J15.PAD              Tioop                 2.439   state_bin<1>
+                                                       state_bin_1_OBUF
+                                                       state_bin<1>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.713ns (2.851ns logic, 1.862ns route)
+                                                       (60.5% logic, 39.5% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_bin<2>" OFFSET = OUT 10 ns AFTER COMP "clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.836ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin<2> (K15.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.164ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_bin_2 (FF)
+  Destination:          state_bin<2> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      5.093ns (Levels of Logic = 1)
+  Clock Path Delay:     2.743ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_bin_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X54Y62.CLK     net (fanout=35)       0.115   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.743ns (2.588ns logic, 0.155ns route)
+                                                       (94.3% logic, 5.7% route)
+
+  Maximum Data Path: state_bin_2 to state_bin<2>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y62.YQ      Tcko                  0.567   state_bin_3
+                                                       state_bin_2
+    K15.O1               net (fanout=22)       1.639   state_bin_2
+    K15.PAD              Tioop                 2.887   state_bin<2>
+                                                       state_bin_2_OBUF
+                                                       state_bin<2>
+    -------------------------------------------------  ---------------------------
+    Total                                      5.093ns (3.454ns logic, 1.639ns route)
+                                                       (67.8% logic, 32.2% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_bin<2>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin<2> (K15.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  6.406ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_bin_2 (FF)
+  Destination:          state_bin<2> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      4.205ns (Levels of Logic = 1)
+  Clock Path Delay:     2.201ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_bin_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X54Y62.CLK     net (fanout=35)       0.098   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.201ns (2.071ns logic, 0.130ns route)
+                                                       (94.1% logic, 5.9% route)
+
+  Minimum Data Path: state_bin_2 to state_bin<2>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y62.YQ      Tcko                  0.454   state_bin_3
+                                                       state_bin_2
+    K15.O1               net (fanout=22)       1.312   state_bin_2
+    K15.PAD              Tioop                 2.439   state_bin<2>
+                                                       state_bin_2_OBUF
+                                                       state_bin<2>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.205ns (2.893ns logic, 1.312ns route)
+                                                       (68.8% logic, 31.2% route)
+
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: COMP "state_bin<3>" OFFSET = OUT 10 ns AFTER COMP "clk";
+For more information, see Offset Out Analysis in the Timing Closure User Guide (UG612).
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected.
+ Minimum allowable offset is   7.814ns.
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin<3> (K14.PAD), 1 path
+--------------------------------------------------------------------------------
+Slack (slowest paths):  2.186ns (requirement - (clock arrival + clock path + data path + uncertainty))
+  Source:               state_bin_3 (FF)
+  Destination:          state_bin<3> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Requirement:          10.000ns
+  Data Path Delay:      5.071ns (Levels of Logic = 1)
+  Clock Path Delay:     2.743ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Maximum Clock Path: clk to state_bin_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 1.131   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.040   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.457   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X54Y62.CLK     net (fanout=35)       0.115   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.743ns (2.588ns logic, 0.155ns route)
+                                                       (94.3% logic, 5.7% route)
+
+  Maximum Data Path: state_bin_3 to state_bin<3>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y62.XQ      Tcko                  0.515   state_bin_3
+                                                       state_bin_3
+    K14.O1               net (fanout=20)       1.669   state_bin_3
+    K14.PAD              Tioop                 2.887   state_bin<3>
+                                                       state_bin_3_OBUF
+                                                       state_bin<3>
+    -------------------------------------------------  ---------------------------
+    Total                                      5.071ns (3.402ns logic, 1.669ns route)
+                                                       (67.1% logic, 32.9% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: COMP "state_bin<3>" OFFSET = OUT 10 ns AFTER COMP "clk";
+--------------------------------------------------------------------------------
+
+Paths for end point state_bin<3> (K14.PAD), 1 path
+--------------------------------------------------------------------------------
+Delay (fastest paths):  6.387ns (clock arrival + clock path + data path - uncertainty)
+  Source:               state_bin_3 (FF)
+  Destination:          state_bin<3> (PAD)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Data Path Delay:      4.186ns (Levels of Logic = 1)
+  Clock Path Delay:     2.201ns (Levels of Logic = 2)
+  Clock Uncertainty:    0.000ns
+
+  Minimum Clock Path: clk to state_bin_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    B8.I                 Tiopi                 0.905   clk
+                                                       clk
+                                                       clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.I0     net (fanout=1)        0.032   clk_BUFGP/IBUFG
+    BUFGMUX_X2Y11.O      Tgi0o                 1.166   clk_BUFGP/BUFG
+                                                       clk_BUFGP/BUFG.GCLKMUX
+                                                       clk_BUFGP/BUFG
+    SLICE_X54Y62.CLK     net (fanout=35)       0.098   clk_BUFGP
+    -------------------------------------------------  ---------------------------
+    Total                                      2.201ns (2.071ns logic, 0.130ns route)
+                                                       (94.1% logic, 5.9% route)
+
+  Minimum Data Path: state_bin_3 to state_bin<3>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X54Y62.XQ      Tcko                  0.412   state_bin_3
+                                                       state_bin_3
+    K14.O1               net (fanout=20)       1.335   state_bin_3
+    K14.PAD              Tioop                 2.439   state_bin<3>
+                                                       state_bin_3_OBUF
+                                                       state_bin<3>
+    -------------------------------------------------  ---------------------------
+    Total                                      4.186ns (2.851ns logic, 1.335ns route)
+                                                       (68.1% logic, 31.9% route)
+
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+reset       |    5.544(R)|   -0.061(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+---------------------+------------+------------------+--------+
+                     | clk (edge) |                  | Clock  |
+Destination          |   to PAD   |Internal Clock(s) | Phase  |
+---------------------+------------+------------------+--------+
+state_announcement<0>|    7.311(R)|clk_BUFGP         |   0.000|
+state_announcement<1>|    6.959(R)|clk_BUFGP         |   0.000|
+state_announcement<2>|    6.705(R)|clk_BUFGP         |   0.000|
+state_announcement<3>|    7.259(R)|clk_BUFGP         |   0.000|
+state_announcement<4>|    7.012(R)|clk_BUFGP         |   0.000|
+state_announcement<5>|    7.030(R)|clk_BUFGP         |   0.000|
+state_announcement<6>|    7.474(R)|clk_BUFGP         |   0.000|
+state_announcement<7>|    7.170(R)|clk_BUFGP         |   0.000|
+state_announcement<8>|    6.960(R)|clk_BUFGP         |   0.000|
+state_announcement<9>|    7.259(R)|clk_BUFGP         |   0.000|
+state_bin<0>         |    7.855(R)|clk_BUFGP         |   0.000|
+state_bin<1>         |    8.476(R)|clk_BUFGP         |   0.000|
+state_bin<2>         |    7.836(R)|clk_BUFGP         |   0.000|
+state_bin<3>         |    7.814(R)|clk_BUFGP         |   0.000|
+---------------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.665|         |         |         |
+---------------+---------+---------+---------+---------+
+
+COMP "reset" OFFSET = IN 10 ns VALID 10 ns BEFORE COMP "clk" "RISING";
+Worst Case Data Window 5.483; Ideal Clock Offset To Actual Clock -2.198; 
+------------------+------------+------------+---------+---------+-------------+
+                  |            |            |  Setup  |  Hold   |Source Offset|
+Source            |   Setup    |    Hold    |  Slack  |  Slack  |  To Center  |
+------------------+------------+------------+---------+---------+-------------+
+reset             |    5.544(R)|   -0.061(R)|    4.456|    0.061|        2.198|
+------------------+------------+------------+---------+---------+-------------+
+Worst Case Summary|       5.544|      -0.061|    4.456|    0.061|             |
+------------------+------------+------------+---------+---------+-------------+
+
+COMP "state_announcement<0>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<0>                          |        7.311|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_announcement<1>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<1>                          |        6.959|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_announcement<2>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<2>                          |        6.705|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_announcement<3>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<3>                          |        7.259|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_announcement<4>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<4>                          |        7.012|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_announcement<5>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<5>                          |        7.030|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_announcement<6>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<6>                          |        7.474|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_announcement<7>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<7>                          |        7.170|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_announcement<8>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<8>                          |        6.960|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_announcement<9>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_announcement<9>                          |        7.259|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_bin<0>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_bin<0>                                   |        7.855|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_bin<1>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_bin<1>                                   |        8.476|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_bin<2>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_bin<2>                                   |        7.836|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+COMP "state_bin<3>" OFFSET = OUT 10 ns AFTER COMP "clk";
+Bus Skew: 0.000 ns; 
+-----------------------------------------------+-------------+--------------+
+PAD                                            | Delay (ns)  |Edge Skew (ns)|
+-----------------------------------------------+-------------+--------------+
+state_bin<3>                                   |        7.814|         0.000|
+-----------------------------------------------+-------------+--------------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 2114 paths, 0 nets, and 617 connections
+
+Design statistics:
+   Minimum period:   7.665ns{1}   (Maximum frequency: 130.463MHz)
+   Minimum input required time before clock:   5.544ns
+   Minimum output required time after clock:   8.476ns
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sat Apr 13 00:13:02 2024 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 363 MB
+
+
+

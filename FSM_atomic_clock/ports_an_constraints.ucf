@@ -1,0 +1,40 @@
+// defining of inputs
+NET "reset" LOC = "B18"; // BTN0
+NET "clk" LOC = "B8";   // input clk header (K13=JA7 for external, B8 for internal/external crystal)
+// led displays the state
+NET "state_bin[0]" LOC="J14"; // LD0
+NET "state_bin[1]" LOC="J15"; // LD1
+NET "state_bin[2]" LOC="K15"; // LD2
+NET "state_bin[3]" LOC="K14"; //LD3
+
+// state announcement on pins
+NET "state_announcement[0]" LOC = "L15";	// output pin header (JA1)
+NET "state_announcement[1]" LOC = "K12";	// output pin header (JA2)
+NET "state_announcement[2]" LOC = "L17";	// output pin header (JA3)
+NET "state_announcement[3]" LOC = "M15";	// output pin header (JA4)
+NET "state_announcement[4]" LOC = "K13";	// output pin header (JA7)
+NET "state_announcement[5]" LOC = "L16";	// output pin header (JA8)
+NET "state_announcement[6]" LOC = "M14";	// output pin header (JA9)
+NET "state_announcement[7]" LOC = "M16";	// output pin header (JA10)
+NET "state_announcement[8]" LOC = "M13";	// output pin header (JB1)
+NET "state_announcement[9]" LOC = "R18";	// output pin header (JB2)
+
+
+#Created by Constraints Editor (xc3s500e-fg320-5) - 2024/02/22
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 10 ns HIGH 50%;
+NET "reset" OFFSET = IN 10 ns VALID 10 ns BEFORE "clk" RISING;
+NET "state_announcement<0>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_announcement<1>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_announcement<2>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_announcement<3>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_announcement<4>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_announcement<5>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_announcement<6>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_announcement<7>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_announcement<8>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_announcement<9>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_bin<0>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_bin<1>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_bin<2>" OFFSET = OUT 10 ns AFTER "clk";
+NET "state_bin<3>" OFFSET = OUT 10 ns AFTER "clk";

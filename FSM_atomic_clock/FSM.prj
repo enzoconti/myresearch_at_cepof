@@ -1,0 +1,3 @@
+verilog work "counter.v"
+verilog work "comb_out_definer.v"
+verilog work "FSM.v"

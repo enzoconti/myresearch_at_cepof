@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/myresearch_at_cepof/FSM_atomic_clock/FSM.ncd
+OUTFILE=/home/ise/myresearch_at_cepof/FSM_atomic_clock/FSM.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/ise/myresearch_at_cepof/FSM_atomic_clock
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/ise/synth_clk_output/topDCM_t5.ncd
-OUTFILE=/home/ise/synth_clk_output/topDCM_t5.bit
+INFILE=/home/ise/myresearch_at_cepof/synth_clk_output/topDCM_t5.ncd
+OUTFILE=/home/ise/myresearch_at_cepof/synth_clk_output/topDCM_t5.bit
 FAMILY=Spartan3E
 PART=xc3s500e-4fg320
-WORKINGDIR=/home/ise/synth_clk_output
+WORKINGDIR=/home/ise/myresearch_at_cepof/synth_clk_output
 LICENSE=ISE
 USER_INFO=8416_11442_1478797146_620

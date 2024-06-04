@@ -1,0 +1,11 @@
+// defining location
+NET "out_clk" LOC = "K13";	// output pin header
+NET "clk" LOC = "B8";   // input clk header (K13=JA7 for external, B8 for internal/external crystal)
+//NET "led" LOC = "J14";
+// NET "raw_clk" LOC = "K12"; // output pin header for clk (JA2)
+
+
+#Created by Constraints Editor (xc3s500e-fg320-4) - 2023/08/30
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 10 ns HIGH 50%;
+NET "out_clk" OFFSET = OUT 10 ns AFTER "clk";

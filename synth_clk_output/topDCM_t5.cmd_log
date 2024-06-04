@@ -119,3 +119,9 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg
 map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o topDCM_t5_map.ncd topDCM_t5.ngd topDCM_t5.pcf 
 par -w -intstyle ise -ol high -t 1 topDCM_t5_map.ncd topDCM_t5.ncd topDCM_t5.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml topDCM_t5.twx topDCM_t5.ncd -o topDCM_t5.twr topDCM_t5.pcf -ucf constraints.ucf 
+xst -intstyle ise -ifn "/home/ise/myresearch_at_cepof/synth_clk_output/topDCM_t5.xst" -ofn "/home/ise/myresearch_at_cepof/synth_clk_output/topDCM_t5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 topDCM_t5.ngc topDCM_t5.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o topDCM_t5_map.ncd topDCM_t5.ngd topDCM_t5.pcf 
+par -w -intstyle ise -ol high -t 1 topDCM_t5_map.ncd topDCM_t5.ncd topDCM_t5.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml topDCM_t5.twx topDCM_t5.ncd -o topDCM_t5.twr topDCM_t5.pcf -ucf constraints.ucf 
+bitgen -intstyle ise -f topDCM_t5.ut topDCM_t5.ncd 

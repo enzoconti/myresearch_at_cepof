@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-localhost.localdomain::  Tue Nov 07 23:47:28 2023
+localhost.localdomain::  Thu Feb 22 18:54:46 2024
 
 par -w -intstyle ise -ol high -t 1 topDCM_t5_map.ncd topDCM_t5.ncd
 topDCM_t5.pcf 
@@ -111,21 +111,21 @@ Phase  2  : 9 unrouted;      REAL time: 3 secs
 
 Phase  3  : 0 unrouted;      REAL time: 3 secs 
 
-Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  4  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
 Updating file: topDCM_t5.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 3 secs 
 
-Total REAL time to Router completion: 4 secs 
+Total REAL time to Router completion: 3 secs 
 Total CPU time to Router completion: 3 secs 
 
 Partition Implementation Status
@@ -145,8 +145,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion: 4 secs 
+Total REAL time to PAR completion: 3 secs 
+Total CPU time to PAR completion: 3 secs 
 
 Peak Memory Usage:  664 MB
 

@@ -5,7 +5,8 @@ Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s500e-fg320-4 topDCM_t5.ngc
 topDCM_t5.ngd
 
-Reading NGO file "/home/ise/synth_clk_output/topDCM_t5.ngc" ...
+Reading NGO file "/home/ise/myresearch_at_cepof/synth_clk_output/topDCM_t5.ngc"
+...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,10 +28,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 486352 kilobytes
+Total memory usage is 486612 kilobytes
 
 Writing NGD file "topDCM_t5.ngd" ...
-Total REAL time to NGDBUILD completion:  2 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total REAL time to NGDBUILD completion:  1 sec
+Total CPU time to NGDBUILD completion:   1 sec
 
 Writing NGDBUILD log file "topDCM_t5.bld"...

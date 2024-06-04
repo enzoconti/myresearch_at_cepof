@@ -1,0 +1,5 @@
+NET "in_pin" LOC = "L15"; //JA1
+NET "out_pin" LOC = "K13"; //JA7
+NET "out_led" LOC = "J14";
+NET "high_led" LOC = "J15";
+NET "clk" LOC = "B8";

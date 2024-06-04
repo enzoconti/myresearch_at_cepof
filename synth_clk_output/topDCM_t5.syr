@@ -138,10 +138,10 @@ Module <five_multiplier_DCM> is correct for synthesis.
     Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <five_multiplier_DCM>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <five_multiplier_DCM>.
     Set user-defined property "CLKDV_DIVIDE =  2.000000" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
-    Set user-defined property "CLKFX_DIVIDE =  1" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
-    Set user-defined property "CLKFX_MULTIPLY =  5" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
+    Set user-defined property "CLKFX_DIVIDE =  20" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
+    Set user-defined property "CLKFX_MULTIPLY =  2" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
     Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
-    Set user-defined property "CLKIN_PERIOD =  100.000000" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
+    Set user-defined property "CLKIN_PERIOD =  10.000000" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
     Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
     Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
     Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_INST> in unit <five_multiplier_DCM>.
@@ -291,13 +291,13 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.29 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.82 secs
  
 --> 
 
 
-Total memory usage is 608860 kilobytes
+Total memory usage is 608728 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
